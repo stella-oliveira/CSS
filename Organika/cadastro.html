@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+		<title>Cadastro</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="CSS/style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+
+		<header>
+			<a href="./index.html"><img src="./Imagens/logo.png" class="logo" /></a>
+			
+			<ul class="nav">
+				<li><a href="" class="button">Sobre nós</a></li>
+				<li class="dropdown"><a href="./plantas.html" class="button">Plantas</a>
+					<div class="dropdown-content">
+						<a href="./ambienteinterno.html">Ambiente interno</a>
+						<a href="./pendentes.html">Pendentes</a>
+						<a href="./solpleno.html">Sol pleno</a>
+			 		</div>
+			 	</li>
+			 	<li class="dropdown"><a href="" class="button">Para plantar</a>
+					<div class="dropdown-content">
+						<a href="">Terra</a>
+						<a href="">Fertilizantes</a>
+						<a href="">Areia & Pedras</a>
+						<a href="">Borrifadores & Regadores</a>
+			 		</div>
+			 	</li>
+			 	<li class="dropdown"><a href="" class="button">Para decorar</a>
+					<div class="dropdown-content">
+						<a href="">Vasos</a>
+						<a href="">Suportes</a>
+			 		</div>
+			 	</li>
+			 	<li class="dropdown"><a href="" class="button">Serviços</a>
+					<div class="dropdown-content">
+						<a href="">Manutenção à domicílio</a>
+						<a href="">Consultorias personalizadas</a>
+			 		</div>
+			 	</li>
+			 	<li><a href="" class="button">Contato</a></li>
+			 	<li><a href="" class="doublebutton1">Login</a></li>
+			 	<li><a href="./cadastro.html" class="doublebutton2">Cadastro</a></li>
+		 		<br />
+		 		<input type="search" class="pesquisa" placeholder="Pesquisar"> 
+		 		<img src="./Imagens/wpp.png" class="social" />
+		 		<img src="./Imagens/insta.png" class="social" />
+		 		<img src="./Imagens/face.png" class="social" />
+		 		<img src="./Imagens/twitter.png" class="social" />
+		 		<img src="./Imagens/google.png" class="social" />
+		 		<img src="./Imagens/shop.png" class="shop" />
+			</ul>
+
+		</header>
+	
+		<main>
+		
+		<div class="content">
+
+			<h1>Cadastro</h1>
+			<br /><br />
+            <form action="enviar.php" method="post" name="cadastro">
+
+            	<table>
+
+                    <tr>
+                        <td class="campo"><label for="nome"><b>Nome completo:</b></label></td>
+                        <td class="resposta"><input type="text" name="nome" id="nome" size="35" maxlength="30" placeholder="Digite seu nome"/></td>
+
+                        <td class="campo"><label for="interesses"><b>Interesses:</b></label></td>
+                        <td class="resposta" rowspan="3">
+                            <input type="checkbox" name="pizza" id="pizza" value="pizza"/>
+                            <label for="pizza">Plantas Ornamentais</label>
+                            <br>
+                            <input type="checkbox" name="hamburguer" id="hamburguer" value="hamburguer"/>
+                            <label for="hamburguer">Plantas de Horta</label>
+                            <br>
+                            <input type="checkbox" name="macarrão" id="macarrão" value="macarrão"/>
+                            <label for="macarrão">PANC's (Plantas Alimentícias Não Convencionais)</label>
+                            <br>
+                            <input type="checkbox" name="hotdog" id="hotdog" value="hotdog"/>
+                            <label for="hotdog">Plantas Frutíferas</label>
+                            <br>
+                            <input type="checkbox" name="sushi" id="sushi" value="sushi"/>
+                            <label for="sushi">Plantas para Sol Pleno</label>
+                            <br>
+                            <input type="checkbox" name="batata" id="batata" value="batata"/>
+                            <label for="batata">Plantas para Ambientes Internos</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                    	<td class="campo"><label for="cpf"><b>CPF:</b></label></td>
+                        <td class="resposta"><input type="text" name="cpf" id="cpf" size="35" maxlength="15" placeholder="Digite seu CPF (somente números)"/></td>
+                    </tr>
+
+                    <tr>
+                        <td class="campo"><label for="dataNascimento"><b>Data de Nascimento:</b></label></td>
+                        <td class="resposta"><input type="date" name="dataNascimento" id="dataNascimento"/></td>
+                    </tr>
+
+                    <tr>
+                        <td class="campo"><label for="sexo"><b>Sexo:</b></label></td>
+                        <td class="resposta">
+                            <input type="radio" name="sexo" id="feminino" value="feminino"/>
+                            <label for="feminino">Feminino</label>
+                            <input type="radio" name="sexo" id="masculino" value="masculino"/>
+                            <label for="masculino">Masculino</label>
+                            <input type="radio" name="sexo" id="outro" value="outro"/>
+                            <label for="outro">Outro</label>
+                        </td>
+
+                        <td class="campo"><label for="nome"><b>Nome de usuário:</b></label></td>
+                        <td class="resposta"><input type="text" name="nome" id="nome" size="35" maxlength="30" placeholder="Digite um nome de usuário"/></td>
+                    </tr>
+
+                    <tr>
+                    	<td class="campo"><label for="cep"><b>CEP:</b></label></td>
+                        <td class="resposta"><input type="text" name="cep" id="cep" size="35" maxlength="15" placeholder="Digite seu CEP (somente números)"/></td>
+
+                        <td class="campo"><label for="senha"><b>Senha:</b></label></td>
+                        <td class="resposta"><input type="password" name="senha" id="senha" size="35" maxlength="40" placeholder="Digite sua senha"/></td>
+                    </tr>
+
+                    <tr>
+                    	<td class="campo"><label for="rua"><b>Rua:</b></label></td>
+                        <td class="resposta"><input type="text" name="rua" id="rua" size="35" maxlength="15" placeholder="Digite sua rua"/></td>
+
+                        <td class="campo"><label for="senha"><b>Confirmar senha:</b></label></td>
+                        <td class="resposta"><input type="password" name="senha" id="senha" size="35" maxlength="35" placeholder="Confirme sua senha"/></td>
+                    </tr>
+
+                    <tr>
+                    	<td class="campo"><label for="numero"><b>Número:</b></label></td>
+                        <td class="resposta"><input type="text" name="numero" id="numero" size="8" maxlength="15" placeholder="Nº"/>
+                        	<input type="radio" name="casaouap" id="casa" value="casa"/>
+                            <label for="casa">Casa</label>
+                            <input type="radio" name="casaouap" id="apartmento" value="apartmento"/>
+                            <label for="apartmento">Apartmento</label>
+
+                        <td class="campo"><label for="email"><b>E-mail:</b></label></td>
+                        <td class="resposta"><input type="email" name="email" id="email" size="35" maxlength="30" placeholder="Digite seu e-mail"/></td>
+                    </tr>
+
+                    <tr>
+                    	<td class="campo"><label for="bairro"><b>Bairro:</b></label></td>
+                        <td class="resposta"><input type="text" name="bairro" id="bairro" size="35" maxlength="15" placeholder="Digite seu bairro"/></td>
+
+                        <td class="campo"><label for="opcao"><b>Deseja receber notícias por e-mail?</b></label></td>
+                        <td class="resposta">
+                            <input type="radio" name="opcao" id="sim" value="sim"/>
+                            <label for="sim">Sim</label>
+                            <input type="radio" name="opcao" id="nao" value="nao"/>
+                            <label for="nao">Não</label>
+                        </td>             	
+                    </tr>
+
+					<tr>
+                        <td class="campo"><label for="estado"><b>Estado:</b></label></td>
+                        <td class="resposta">
+                            <select name="estado" id="estado">
+                                <option value="" selected>--- Selecione ---</option>
+
+                                <optgroup label="Região Norte">
+                                    <option value="ac">Acre</option>
+                                    <option value="ap">Amapá</option>
+                                    <option value="am">Amazonas</option>
+                                    <option value="pa">Pará</option>
+                                    <option value="ro">Rondônia</option>
+                                    <option value="rr">Roraima</option>
+                                    <option value="to">Tocantins</option>
+                                </optgroup>
+
+                                <optgroup label="Região Nordeste">
+                                    <option value="al">Alagoas</option>
+                                    <option value="ba">Bahia</option>
+                                    <option value="ce">Ceará</option>
+                                    <option value="ma">Maranhão</option>
+                                    <option value="pb">Paraíba</option>
+                                    <option value="pe">Pernambuco</option>
+                                    <option value="pi">Piauí</option>
+                                    <option value="rn">Rio Grande do Norte</option>
+                                    <option value="se">Sergipe</option>
+                                </optgroup>
+
+                                <optgroup label="Região Centro-Oeste">
+                                    <option value="go">Goiás</option>
+                                    <option value="mt">Mato Grosso</option>
+                                    <option value="ms">Mato Grosso do Sul</option>
+                                </optgroup>
+
+                                <optgroup label="Região Sudeste">
+                                	<option value="es">Espiríto Santo</option>
+                                    <option value="mg">Minas Gerais</option>
+                                    <option value="rj">Rio de Janeiro</option>
+                                    <option value="sp">São Paulo</option>          
+                                </optgroup>
+
+                                <optgroup label="Região Sul">
+                                	<option value="pr">Paraná</option>
+                                    <option value="rs">Rio Grande do Sul</option>
+                                    <option value="sc">Santa Catarina</option>      
+                                </optgroup>
+
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="submit" colspan="4">
+                            <input type="submit" value="Enviar" id="enviar" name="enviar" class="submitbutton" />
+                            <input type="reset" value="Limpar" id="limpar" name="limpar" class="erasebutton" />
+                        </td>
+                    </tr>
+
+                </table>
+            </form>
+            <br />
+            <div class="push"></div>
+        </div>
+		</main>
+
+		<footer class="footer">
+			<p>contato@organika.com.br</p>
+			<p>(31) 99232-8988</p>
+			<p>Organika &#174;</p>
+		</footer>
+
+	</body>
+
+</html>

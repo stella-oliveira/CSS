@@ -1,0 +1,391 @@
+* {
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+
+*:before, *:after {
+	box-sizing: inherit;
+}
+
+html, body {
+	height: 100%;
+}
+
+body  {
+	font-size: 14px;
+	font-family: 'Courier New', monospace;
+  	background: #F8F9FA;
+  	display: flex;
+	flex-direction: column;
+}
+
+header {
+	background: #609A81;
+	height: auto;
+}
+
+main {
+	background: #F8F9FA;
+	text-align: center;
+}
+
+.footer {
+	background: #609A81;
+	padding: 30px;
+	font-size: 14px;
+	text-align: center;
+	flex-shrink: 0;
+}
+
+.content {
+	flex: 1 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Waiting for the Sunrise', cursive;
+	font-size: 70px;
+	font-weight: bold;
+	color: #4f7f6a;
+	padding-top: 10px;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+}
+
+td {
+	font-size: 14px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+input, select, option, optgroup {
+	padding: 5px;
+	font-family: 'Courier New', monospace; 
+}
+
+.campo {
+	text-align: right;
+	width: 170px;
+}
+
+.resposta {
+	text-align: left;
+	width: 300px;
+	padding-right: 50px;
+}
+
+.submit {
+	text-align: center;
+	padding-top: 30px;
+}
+
+.submitbutton, .erasebutton {
+	padding: 10px 25px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.submitbutton {
+	border: 1px solid #4f7f6a;
+	background: #4f7f6a;
+	color: #FFF;
+}
+
+.erasebutton {
+	border: 1px solid #000;
+	background: #FFF;
+	color: #000;
+}
+
+.submitbutton:hover, .erasebutton:hover {
+	background: #FFF;
+	border: 1px solid #4f7f6a;
+	color: #4f7f6a;
+}
+
+.logo {
+	width: 220px;
+	margin: 20px auto 20px 60px;
+	float: left;
+}
+
+.dropdown {
+	text-align: center;
+	width: 180px;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+}
+
+@media (min-width: 768px) {
+	.button {
+	 	margin-top: -20px;
+	 	margin-bottom: 5px;
+	}
+}
+
+.button {
+	color: #4f7f6a;
+	width: 150px;
+	background: #FFF;
+	padding: 10px 15px 10px 15px;
+	border-radius: 5px;
+	border: 1px solid #FFF;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+ 	transition: .5s;
+}
+
+.button:hover {
+	color: #FFF;
+	background: #000;
+}
+
+.nav {
+    height: auto;
+    list-style: none;
+    margin: 0;
+    padding: 45px 0 0 0;
+    text-align: center;
+}
+
+.nav ul{
+    list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+.nav li {
+	text-align: center;
+	margin-left: auto;
+	margin-right: 0px;
+	display: inline-block;
+	width: auto;
+}
+
+li a  {
+  display: inline-block;
+  color: #4F7F6A;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+  	min-width: 160px;
+	background-color: #FFF;
+	width: 180px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+	text-align: center;
+	border-radius: 0 0 5px 5px;
+	border: 1px solid #FFF;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	transition: .3s;
+}
+
+.dropdown-content a:hover {
+	background-color: #4f7f6a;
+	color: #FFF;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	border: 1px solid #000;  
+}
+
+.dropdown:hover .button {
+  border-radius: 5px 5px 0 0;
+}
+
+.doublebutton1 {
+	color: #FFF;
+	width: 90px;
+	background: #000;
+	padding: 10px 15px 10px 15px;
+	border-radius: 5px 0 0 5px;
+	border: 1px solid #FFF;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+ 	transition: .5s;
+}
+
+.doublebutton1:hover, .doublebutton2:hover {
+	background: #37755a;
+	color: #FFF;
+	border: 1px solid #FFF;
+}
+
+.doublebutton2 {
+	color: #FFF;
+	width: 90px;
+	background: none;
+	padding: 10px 15px 10px 15px;
+	border-radius: 0 5px 5px 0;
+	border: 1px solid #FFF;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-left: -9px;
+ 	transition: .5s;
+}
+
+.pesquisa {
+	display: inline-block;
+	margin: 25px 10px auto auto;
+	padding: 9px 15px;
+	border-radius: 5px;
+	width: 200px;
+	border: none;
+}
+
+.social {
+	height: 30px;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.shop {
+	height: 35px;
+	vertical-align: middle;
+	margin-left: 50px;
+}
+
+.banner {
+	display: block;
+	max-height: 80%;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.galeria {
+	text-align: center;
+	width: auto;
+	height: auto;
+	display: inline-block;
+	margin-bottom: 40px;
+}
+
+.image {
+	width: 300px;
+	height: 370px;
+	margin: 0 10px 0 10px;
+	border-radius: 15px;
+	transition: .5s;
+	transform: scale(.9);
+}
+
+.image:hover {
+	transform: scale(1);
+}
+
+.title {
+	text-align: center;
+	font-family: 'Waiting for the Sunrise', cursive;
+	font-size: 36px;
+	color: #4f7f6a;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.description {
+	font-size: 30px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.buttonshop {
+	padding: 10px 15px;
+	border-radius: 5px 0 0 5px;
+	background: #000;
+	color: #FFF;
+	font-size: 18px;
+	border: 1px solid #000;
+	transition: .5s;
+}
+
+.buttonmore {
+	padding: 10px 15px;
+	border-radius: 0px 5px 5px 0;
+	background: #4f7f6a;
+	color: #FFF;
+	font-size: 18px;
+	transition: .5s;
+	border: 1px solid #4f7f6a;
+}
+
+.buttonshop:hover, .buttonmore:hover {
+	background: #FFF;
+	border: 1px solid #4f7f6a;
+	color: #000;
+}
+
+
+.lista {
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 16px;
+}
+
+.ulplantas {
+	display: block;
+	list-style-type: disc;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 130px;
+}
+
+.ulplantas2 {
+	display: block;
+	list-style-type: circle;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 50px;
+}
+
+.liplantas {
+	display: list-item;
+	text-align: left;
+}
+
+.banner2 {
+	display: block;
+	max-width: 100%;
+}
