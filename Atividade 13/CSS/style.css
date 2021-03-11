@@ -1,0 +1,117 @@
+* {
+	margin: 0;
+	padding: 0;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+header {
+	background-color: #00662c;
+}
+
+header ul, nav ul, footer {
+	text-align: center;
+	padding: 10px;
+}
+
+header li, header a {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+header li, header a, nav li, nav a {
+	display: inline-block;
+	text-decoration: none;
+	color: #FFF;
+	padding: 0 20px;
+}
+
+.logoheader {
+	text-align: center;
+	height: 200px;
+	width: 100%;
+	display: table;
+}
+
+.logo img {
+	height: 180px;
+}
+
+.logo, .face, .wpp, .phone {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.logo {
+	width: 30%;
+}
+
+.face, .wpp, {
+	width: 20%;
+}
+
+.phone {
+	width: 50%;
+}
+
+.phone h1 {
+	display: inline-block;
+	font-size: 150%;
+	font-weight: normal;
+	vertical-align: 15px;
+	padding: 0 0 0 20px;
+}
+
+nav, footer {
+	background-color: #008037;
+}
+
+.banner {
+	width: 100%;
+}
+
+footer {
+	margin-top: -5px;
+	color: #FFF;
+}
+
+footer p {
+	margin-top: 5px;
+}
+
+.conteudo {
+	width: 100%;
+	display: table;
+}
+
+.conteudo1 {
+	width: 50%;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.conteudo1 img {
+	width: 90%;
+	height: auto;
+	border-radius: 20px;
+	margin: 20px;
+}
+
+.conteudo2 {
+	width: 50%;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center; 
+}
+
+.conteudo2 p, .conteudo2 h1 {
+	width: 80%;
+	text-align: justify;
+	margin-bottom: 50px;
+}
