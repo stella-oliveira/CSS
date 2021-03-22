@@ -12,9 +12,9 @@ html, body {
 	height: 100%;
 }
 
-body  {
+body {
 	font-size: 14px;
-	font-family: 'Courier New', monospace;
+	font-family: 'Open Sans', sans-serif;
   	background: #F8F9FA;
   	display: flex;
 	flex-direction: column;
@@ -23,6 +23,8 @@ body  {
 header {
 	background: #609A81;
 	height: auto;
+	width: 100%;
+	display: table;
 }
 
 main {
@@ -71,9 +73,9 @@ td {
 	padding-left: 10px;
 }
 
-input, select, option, optgroup {
+input, select, option, optgroup, textarea {
 	padding: 5px;
-	font-family: 'Courier New', monospace; 
+	font-family: 'Open Sans', sans-serif;
 }
 
 .campo {
@@ -89,11 +91,11 @@ input, select, option, optgroup {
 
 .submit {
 	text-align: center;
-	padding-top: 30px;
+	padding: 20px 0;
 }
 
 .submitbutton, .erasebutton {
-	padding: 10px 25px;
+	padding: 10px 35px;
 	border-radius: 5px;
 	text-transform: uppercase;
 	font-size: 16px;
@@ -119,36 +121,33 @@ input, select, option, optgroup {
 
 .logo {
 	width: 220px;
-	margin: 20px auto 20px 100px;
-	float: left;
 }
 
-.dropdown {
-	text-align: center;
-	width: 180px;
-	margin-left: auto;
-	margin-right: auto;
-	display: inline-block;
+.header-left {
+	display: table-cell;
+	text-align: center; 
+	width: 15%;
+	padding: 10px 0;
 }
 
-@media (min-width: 768px) {
-	.button {
-	 	margin-top: -20px;
-	 	margin-bottom: 5px;
-	}
+.header-right {
+	display: table-cell;
+	vertical-align: middle;
+	width: 75%;
 }
 
 .button {
 	color: #4f7f6a;
 	width: 150px;
 	background: #FFF;
-	padding: 10px 15px 10px 15px;
+	padding: 10px 15px;
 	border-radius: 5px;
 	border: 1px solid #FFF;
 	font-size: 14px;
 	font-weight: bold;
 	text-transform: uppercase;
  	transition: .5s;
+ 	margin: 0 5px;
 }
 
 .button:hover {
@@ -157,10 +156,11 @@ input, select, option, optgroup {
 }
 
 .nav {
+	width: 90%;
+	margin-left: 30px;
     height: auto;
     list-style: none;
-    margin: 0;
-    padding: 45px 0 0 0;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -182,10 +182,18 @@ input, select, option, optgroup {
 
 li a  {
   display: inline-block;
-  color: #4F7F6A;
+  color: #4f7f6a;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+.dropdown {
+	text-align: center;
+	width: 180px;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
 }
 
 li.dropdown {
@@ -198,8 +206,8 @@ li.dropdown {
   	min-width: 160px;
 	background-color: #FFF;
 	width: 180px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 5px;
+	margin-right: 5px;
 	z-index: 1;
 	text-align: center;
 	border-radius: 0 0 5px 5px;
@@ -257,7 +265,7 @@ li.dropdown {
 	font-size: 14px;
 	font-weight: bold;
 	text-transform: uppercase;
-	margin-left: -9px;
+	margin-left: -5px;
  	transition: .5s;
 }
 
@@ -270,10 +278,19 @@ li.dropdown {
 	border: none;
 }
 
+.icons-header {
+	display: inline-block;
+}
+
 .social {
 	height: 30px;
 	vertical-align: middle;
 	margin-left: 10px;
+	transition: .2s ease-in-out;
+}
+
+.social:hover {
+	height: 40px;
 }
 
 .shop {
@@ -283,11 +300,32 @@ li.dropdown {
 }
 
 .banner {
+	background-image: url('../Imagens/banner1.jpg');
 	display: block;
+	height: 900px;
 	max-height: 80%;
-	max-width: 100%;
-	margin-left: auto;
-	margin-right: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.banner-text {
+	  background-color: rgb(0,0,0); /* Fallback color */
+	  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+	  color: white;
+	  font-family: 'Waiting for the Sunrise', cursive;
+	  font-size: 600%;
+	  font-weight: bold;
+	  position: absolute;
+	  top: 55%;
+	  left: 0;
+	  right: 0;
+	  z-index: 2;
+	  padding: 20px;
+	  margin: 0 auto;
+	  text-align: center;
+	  width: 95%;
 }
 
 .galeria {
@@ -298,9 +336,12 @@ li.dropdown {
 	margin-bottom: 40px;
 }
 
+.galeria p {
+	font-style: italic;
+}
+
 .image {
 	width: 300px;
-	height: 370px;
 	margin: 0 10px 0 10px;
 	border-radius: 15px;
 	transition: .5s;
@@ -317,7 +358,7 @@ li.dropdown {
 	font-size: 36px;
 	color: #4f7f6a;
 	font-weight: bold;
-	margin-bottom: 10px;
+	margin: 0;
 }
 
 .description {
@@ -327,7 +368,7 @@ li.dropdown {
 }
 
 .buttonshop {
-	padding: 10px 15px;
+	padding: 10px 20px;
 	border-radius: 5px 0 0 5px;
 	background: #000;
 	color: #FFF;
@@ -336,8 +377,34 @@ li.dropdown {
 	transition: .5s;
 }
 
-.buttonmore {
+.buttonshop-planta {
+	display: block;
+	width: 30%;
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: 10px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+	color: #FFF;
+	background-color: #3A775D; 
+	border: 1px solid #3A775D;
 	padding: 10px 15px;
+	border-radius: 10px;
+	box-shadow: inset 0 0 0 0 #3A775D;
+  	-webkit-transition: ease-out 0.4s;
+  	-moz-transition: ease-out 0.4s;
+  	transition: ease-out 0.4s;
+}
+
+.buttonshop-planta:hover { 
+	border: 1px solid #000;
+	box-shadow: inset 400px 0 0 0 #000;
+}
+
+.buttonmore {
+	padding: 10px 20px;
 	border-radius: 0px 5px 5px 0;
 	background: #4f7f6a;
 	color: #FFF;
@@ -346,7 +413,24 @@ li.dropdown {
 	border: 1px solid #4f7f6a;
 }
 
-.buttonshop:hover, .buttonmore:hover {
+.buttonmore-index {
+	padding: 10px 15px;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	transition: .5s;
+	border: 1px solid #4f7f6a;
+	margin: 10px auto;
+	display: block;
+	width: 50%;
+}
+
+.buttonmore-index:hover {
+	background: #4f7f6a;
+	color: #FFF;
+}
+
+.buttonshop:hover, .buttonmore:hover, .buttonmore-index {
 	background: #FFF;
 	border: 1px solid #4f7f6a;
 	color: #000;
@@ -407,4 +491,189 @@ li.dropdown {
 	font-weight: bold;
 }
 
+.fa-phone-alt, .fa-whatsapp, .fa-envelope {
+	color: #609A81;
+	font-size: 200%;
+	margin: 0 20px 20px 0;
+}
 
+.contato-info-title {
+	width: 80%;
+	text-align: left;
+}
+
+.contato-info {
+	text-align: left;
+}
+
+.contato-info p {
+	display: inline-block;
+	vertical-align: 5px;
+	margin-bottom: 20px;
+}
+
+.fa-map-marker-alt {
+	color: #609A81;
+	font-size: 350%;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.endereco {
+	width: 25%;
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 70px;
+	vertical-align: top;
+	padding-right: 50px;
+}
+
+.endereco-title {
+	display: inline-block;
+}
+
+#mapa {
+    width: 30%;
+    height: 240px;
+   	display: inline-block;
+   	border-radius: 10px;
+   	margin: 25px 0;
+}
+
+.conteudo-planta {
+	display: inline-block;
+	vertical-align: top;
+	text-align: justify;
+	width: 50%;
+	padding-left: 50px;
+}
+
+.conteudo-planta h2 {
+	font-family: 'Waiting for the Sunrise', cursive;
+	font-size: 40px;
+	display: inline-block;
+	margin-left: 20px;
+	margin: 10px 0 10px 20px;
+}
+
+.conteudo-planta p {
+	font-size: 130%;
+}
+
+.conteudo-planta p.cientifico {
+	font-style: italic;
+}
+
+.price {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -20px;
+	text-align: center;
+}
+
+.conteudo-planta h3, .conteudo-planta h1 {
+	display: inline-block;
+	font-family: 'Waiting for the Sunrise', cursive;
+	color: #609A81;
+}
+
+.conteudo-planta h3 {
+	font-size: 400%;
+	vertical-align: 0px;
+	margin-right: 10px;
+}
+
+.conteudo-planta h1 {
+	font-size: 700%;
+}
+
+.fa-tint, .fa-sun, .fa-edit {
+	display: inline-block;
+	vertical-align: 5px;
+}
+
+.fa-edit {
+	color: #609A81;
+	font-size: 150%;
+}
+
+.fa-tint {
+	color: #1E8899;
+	font-size: 150%;
+}
+
+.fa-sun {
+	color: #d3b300;
+	font-size: 180%;
+}
+
+.mySlides {display:none;}
+
+.planta {
+	width: 500px;
+	display: inline-block;
+	margin-bottom: 20px auto;
+}
+
+.planta img {
+	width: 100%;
+	height: 60%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 10px #888888;
+	margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 480px) {
+	.header-left { width: 100%; display: block; }
+	.header-right { width: 100%; display: block; }
+	.button, .doublebutton1, .doublebutton2 { margin-top: 10px; }
+	.icons-header { display: block; margin-top: 20px; }
+	.banner-text { font-size: 400%; width: 90%; top: 100%; }
+	.missao { display: block; width: 70%; margin: 0 auto;}
+	.visao, .valores { display: block; width: 70%;  }
+	table { width: 90%; }
+	.campo, .resposta, .contato-info { display: block; width: 80%; text-align: justify; }
+	.contato-info-title { display: none; }
+	.contato-info { display: block; width: 100%; text-align: center; margin-top: 10px;  }
+	.fa-map-marker-alt { display: block; margin: 0 auto; padding: 0;}
+	.endereco { width: 80%; display: block; margin: 10px auto; padding: 0; }
+	#mapa { display: block; width: 90%; margin: 20px auto; }
+	.conteudo-planta { width: 80%; padding: 0; }
+	.planta { width: 400px; }
+	.buttonshop-planta { width: 70%; }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	.header-left { width: 100%; display: block; }
+	.header-right { width: 100%; display: block; }
+	.button, .doublebutton1, .doublebutton2 { margin-top: 10px; }
+	.banner-text { font-size: 400%; width: 90%; top: 90%; }
+	.visao, .valores { display: block; width: 70%; }
+	.campo, .resposta, .contato-info { display: block; width: 100%; text-align: justify; }
+	.contato-info-title { display: none; }
+	.contato-info { display: block; width: 100%; text-align: center; margin-top: 10px;  }
+	.fa-map-marker-alt { display: block; margin: 0 auto; padding: 0;}
+	.endereco { width: 80%; display: block; margin: 10px auto; padding: 0; }
+	#mapa { display: block; width: 90%; margin: 20px auto; }
+	.conteudo-planta { width: 80%; padding: 0; }
+	.planta { width: 400px; }
+	.buttonshop-planta { width: 60%; }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	.banner-text { font-size: 500%; width: 90%; top: 70%; }
+	.visao, .valores { display: block; width: 70%; }
+	.campo, .resposta { display: block; width: 70%; text-align: justify; }
+	.conteudo-planta { width: 80%; padding: 0; }
+	.buttonshop-planta { width: 50%; }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+	.button, .doublebutton1, .doublebutton2 { margin-top: 10px; }
+	.conteudo-planta { width: 80%; padding: 0; }
+	.buttonshop-planta { width: 40%; }
+}
+
+@media only screen and (min-width: 1201px) {
+	.button, .doublebutton1, .doublebutton2 { margin-top: 10px; }
+}

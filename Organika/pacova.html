@@ -3,7 +3,7 @@
 <html lang="pt-br">
 
 	<head>
-	    <title>Sol pleno</title>
+	    <title>Pacová</title>
 	    <meta charset="UTF-8">
 	    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
 	    <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,11 +12,12 @@
 		<link rel="shortcut icon" href="./Imagens/icon.png" type="image/png">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <script src="https://kit.fontawesome.com/ef7a547aae.js" crossorigin="anonymous"></script>
 	</head>
 	
 	<body>
-
 		<header>
+			
 			<div class="header-left">  
 				<a href="./index.html"><img src="./Imagens/logo.png" class="logo" /></a> 
 			</div>
@@ -71,37 +72,45 @@
 		</header>
 
 		<main>
-		
 		<div class="content">
 
-			<h1>Para sol pleno</h1>
+			<h1>Pacová</h1><br />
 
-			<div class="galeria">
-	    		<img src="./Imagens/manjericao.jpg" class="image" />
-	    		<div class="title">Manjericão</div>
-	    		<p>Ocimum basilicum</p>
-	    		<div class="description">R$30</div>
-	    		<a href="" class="buttonshop">COMPRAR</a><a href="manjericao.html" class="buttonmore">SAIBA MAIS</a>
-	    	</div>
+				<div class="planta">
+					  <img class="mySlides" src="./Imagens/pacova1.jpg" >
+					  <img class="mySlides" src="./Imagens/pacova2.jpg" >
+					  <img class="mySlides" src="./Imagens/pacova3.jpg" >
+				</div>
 
-	    	<div class="galeria">
-		    	<img src="./Imagens/cacto.jpg" class="image" />
-		    	<div class="title">Cacto-candelabro</div>
-		    	<p>Euphorbia trigona</p>
-	    		<div class="description">R$55</div>
-	    		<a href="" class="buttonshop">COMPRAR</a><a href="cacto.html" class="buttonmore">SAIBA MAIS</a>
-		    </div>
+				<div class="conteudo-planta">
+					<i class="fas fa-edit"></i><h2>Nome científico:</h2>
+						<p class="cientifico">Philodendron martianum</p>
+					<i class="fas fa-tint"></i><h2>Rega:</h2>
+						<p>1x por semana. Espécie tropical, o pacová adora receber borrifada de água nas folhas, especialmente nos dias mais secos. Os substratos para orquídeas ou samambaias são ótimas escolhas na hora de plantá-lo.</p>
+					<i class="fas fa-sun"></i></i><h2>Iluminação:</h2>
+						<p>Meia-sombra ou luz difusa.</p>
+					<div class="price"><h3>R$</h3><h1>90</h1></div>
+					<a href="" class="buttonshop-planta">COMPRAR</a>
+				</div>
 
-		    <div class="galeria">
-	    		<img src="./Imagens/avelos.jpg" class="image" />
-	    		<div class="title">Avelós</div>
-	    		<p>Euphorbia tirucalli</p>
-	    		<div class="description">R$40</div>
-	    		<a href="" class="buttonshop">COMPRAR</a><a href="avelos.html" class="buttonmore">SAIBA MAIS</a>
-	    	</div>
-	    
-	    </div>
-	    
+			<script>
+				var myIndex = 0;
+				carousel();
+
+				function carousel() {
+					var i;
+					var x = document.getElementsByClassName("mySlides");
+					for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";  
+					}
+					myIndex++;
+					if (myIndex > x.length) {myIndex = 1}    
+						x[myIndex-1].style.display = "block";  
+					setTimeout(carousel, 3000); // Change image every 2 seconds
+				}
+			</script>
+
+		</div>
 		</main>
 
 		<footer class="footer">
@@ -111,5 +120,4 @@
 		</footer>
 
 	</body>
-
 </html>

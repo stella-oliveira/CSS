@@ -8,64 +8,98 @@
 		<link rel="stylesheet" type="text/css" href="CSS/style.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 		<link rel="shortcut icon" href="./Imagens/icon.png" type="image/png">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <script src="https://kit.fontawesome.com/ef7a547aae.js" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
 
 		<header>
-			<a href="./index.html"><img src="./Imagens/logo.png" class="logo" /></a>
-			
-			<ul class="nav">
-				<li><a href="sobre.html" class="button">Sobre nós</a></li>
-				<li class="dropdown"><a href="" class="button">Plantas</a>
-					<div class="dropdown-content">
-						<a href="./ambienteinterno.html">Ambiente interno</a>
-						<a href="./pendentes.html">Pendentes</a>
-						<a href="./solpleno.html">Sol pleno</a>
-			 		</div>
-			 	</li>
-			 	<li class="dropdown"><a href="" class="button">Para plantar</a>
-					<div class="dropdown-content">
-						<a href="">Terra</a>
-						<a href="">Fertilizantes</a>
-						<a href="">Areia & Pedras</a>
-						<a href="">Borrifadores & Regadores</a>
-			 		</div>
-			 	</li>
-			 	<li class="dropdown"><a href="" class="button">Para decorar</a>
-					<div class="dropdown-content">
-						<a href="">Vasos</a>
-						<a href="">Suportes</a>
-			 		</div>
-			 	</li>
-			 	<li class="dropdown"><a href="" class="button">Serviços</a>
-					<div class="dropdown-content">
-						<a href="">Manutenção à domicílio</a>
-						<a href="">Consultorias personalizadas</a>
-			 		</div>
-			 	</li>
-			 	<li><a href="" class="button">Contato</a></li><br />
-			 	<li><a href="" class="doublebutton1">Login</a></li>
-			 	<li><a href="./cadastro.html" class="doublebutton2">Cadastro</a></li>
-		 		<br />
-		 		<input type="search" class="pesquisa" placeholder="Pesquisar"> 
-		 		<img src="./Imagens/wpp.png" class="social" />
-		 		<img src="./Imagens/insta.png" class="social" />
-		 		<img src="./Imagens/face.png" class="social" />
-		 		<img src="./Imagens/twitter.png" class="social" />
-		 		<img src="./Imagens/google.png" class="social" />
-		 		<img src="./Imagens/shop.png" class="shop" />
-			</ul>
+			<div class="header-left">  
+				<a href="./index.html"><img src="./Imagens/logo.png" class="logo" /></a> 
+			</div>
 
+			<div class="header-right">
+
+				<ul class="nav">
+
+					<li><a href="sobre.html" class="button">Sobre nós</a></li>
+					<li class="dropdown"><a href="" class="button">Plantas</a>
+						<div class="dropdown-content">
+							<a href="./ambienteinterno.html">Ambiente interno</a>
+							<a href="./pendentes.html">Pendentes</a>
+							<a href="./solpleno.html">Sol pleno</a>
+				 		</div>
+				 	</li>
+				 	<li class="dropdown"><a href="" class="button">Para plantar</a>
+						<div class="dropdown-content">
+							<a href="">Terra</a>
+							<a href="">Fertilizantes</a>
+							<a href="">Areia & Pedras</a>
+							<a href="">Borrifadores & Regadores</a>
+				 		</div>
+				 	</li>
+				 	<li class="dropdown"><a href="" class="button">Para decorar</a>
+						<div class="dropdown-content">
+							<a href="">Vasos</a>
+							<a href="">Suportes</a>
+				 		</div>
+				 	</li>
+				 	<li class="dropdown"><a href="" class="button">Serviços</a>
+						<div class="dropdown-content">
+							<a href="">Manutenção à domicílio</a>
+							<a href="">Consultorias personalizadas</a>
+				 		</div>
+				 	</li>
+				 	<li><a href="contato.html" class="button">Contato</a></li>
+				 	<li><a href="" class="doublebutton1">Login</a></li>
+				 	<li><a href="./cadastro.html" class="doublebutton2">Cadastro</a></li>			 		
+			 		<br />			 
+			 		<input type="search" class="pesquisa" placeholder="Pesquisar"> 
+			 		<div class="icons-header">
+				 		<a href=""><img src="./Imagens/wpp.png" class="social" /></a>
+				 		<a href=""><img src="./Imagens/insta.png" class="social" /></a>
+				 		<a href=""><img src="./Imagens/face.png" class="social" /></a>
+				 		<a href=""><img src="./Imagens/twitter.png" class="social" /></a>
+				 		<a href=""><img src="./Imagens/google.png" class="social" /></a>
+				 		<a href=""><img src="./Imagens/shop.png" class="shop" /></a>
+				 	</div>
+				</ul> 
+			</div>
+			
 		</header>
 	
 		<main>
 
 		<div class="content">
-			<img src="./Imagens/banner.png" class="banner"/>
+			<div class="banner"></div>
+			<div class="banner-text">O jardim que você sempre sonhou você encontra aqui!</div>
+			
+			<h1>Mais vendidas</h1>
+
+			<div class="galeria">
+	    		<img src="./Imagens/begonia.jpg" class="image" />
+	    		<a href="begonia.html" class="buttonmore-index">SAIBA MAIS</a>
+	    	</div>
+
+	    	<div class="galeria">
+	    		<img src="./Imagens/filodendro.jpg" class="image" />
+	    		<a href="filodendro.html" class="buttonmore-index">SAIBA MAIS</a>
+	    	</div>
+
+	    	<div class="galeria">
+		    	<img src="./Imagens/hera.jpg" class="image" />
+		    	<a href="hera.html" class="buttonmore-index">SAIBA MAIS</a>
+		    </div>
+
+	    	<div class="galeria">
+		    	<img src="./Imagens/costela.jpg" class="image" />
+		    	<a href="costela.html" class="buttonmore-index">SAIBA MAIS</a>
+		    </div>
+
 		</div>
 		</main>
 
@@ -74,6 +108,17 @@
 			<p>(31) 99232-8988</p>
 			<p>Organika &#174;</p>
 		</footer>
+
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "nav") {
+			    x.className += "responsive";
+			  } else {
+			    x.className = "nav";
+			  }
+			}
+		</script>
 
 	</body>
 

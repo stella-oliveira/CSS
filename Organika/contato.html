@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+		<title>Organika</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="CSS/style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" href="./Imagens/icon.png" type="image/png">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <script src="https://kit.fontawesome.com/ef7a547aae.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+
+		<header>
+			<div class="header-left">  
+				<a href="./index.html"><img src="./Imagens/logo.png" class="logo" /></a> 
+			</div>
+
+			<div class="header-right">
+
+				<ul class="nav">
+					<li><a href="sobre.html" class="button">Sobre nós</a></li>
+					<li class="dropdown"><a href="" class="button">Plantas</a>
+						<div class="dropdown-content">
+							<a href="./ambienteinterno.html">Ambiente interno</a>
+							<a href="./pendentes.html">Pendentes</a>
+							<a href="./solpleno.html">Sol pleno</a>
+				 		</div>
+				 	</li>
+				 	<li class="dropdown"><a href="" class="button">Para plantar</a>
+						<div class="dropdown-content">
+							<a href="">Terra</a>
+							<a href="">Fertilizantes</a>
+							<a href="">Areia & Pedras</a>
+							<a href="">Borrifadores & Regadores</a>
+				 		</div>
+				 	</li>
+				 	<li class="dropdown"><a href="" class="button">Para decorar</a>
+						<div class="dropdown-content">
+							<a href="">Vasos</a>
+							<a href="">Suportes</a>
+				 		</div>
+				 	</li>
+				 	<li class="dropdown"><a href="" class="button">Serviços</a>
+						<div class="dropdown-content">
+							<a href="">Manutenção à domicílio</a>
+							<a href="">Consultorias personalizadas</a>
+				 		</div>
+				 	</li>
+				 	<li><a href="" class="button">Contato</a></li>
+				 	<li><a href="" class="doublebutton1">Login</a></li>
+				 	<li><a href="./cadastro.html" class="doublebutton2">Cadastro</a></li>
+			 		<br />
+			 		<input type="search" class="pesquisa" placeholder="Pesquisar"> 
+			 		<div class="icons-header">
+				 		<a href=""><img src="./Imagens/wpp.png" class="social" /></a>
+				 		<a href=""><img src="./Imagens/insta.png" class="social" /></a>
+				 		<a href=""><img src="./Imagens/face.png" class="social" /></a>
+				 		<a href=""><img src="./Imagens/twitter.png" class="social" /></a>
+				 		<a href=""><img src="./Imagens/google.png" class="social" /></a>
+				 		<a href=""><img src="./Imagens/shop.png" class="shop" /></a>
+				 	</div>
+				</ul> 
+			</div>
+			
+		</header>
+
+		<main>
+			
+			<div class="content">
+
+			<h1>Contato</h1>
+			<h2>Nossa equipe está preparada para te responder em até 24 horas!</h2>
+			<br /><br />
+
+	            <form action="enviar.php" method="post" name="cadastro">
+	            	<table>
+
+	                	<tr>
+	                        <td class="campo"><label for="nome"><b>Nome:</b></label></td>
+	                        <td class="resposta"><input type="text" name="nome" id="nome" size="50" maxlength="30" placeholder="Digite seu nome"/></td>
+	                    </tr>
+
+	                    <tr>
+	                    	<td class="campo"><label for="email"><b>E-mail:</b></label></td>
+                        	<td class="resposta"><input type="email" name="email" id="email" size="50" maxlength="30" placeholder="Digite seu e-mail"/></td>
+                        	<td><h3 class="contato-info-title">Ou, se preferir, fale conosco por telefone, whatsapp ou e-mail:</h3></td>
+	                    </tr>
+
+	                    <tr>
+	                        <td class="campo"><label for="mensagem"><b>Mensagem:</b></label></td>
+	                        <td class="resposta"><textarea name="mensagem" id="mensagem" cols="48.5" rows="10" maxlength="300"></textarea></td>
+	                       	<td class="contato-info">
+	                       		<i class="fas fa-phone-alt"></i>
+	                        	<p class="contato-info">(31) 99490-1210</p><br />
+	                        	<i class="fab fa-whatsapp"></i>
+                        		<p class="contato-info">  (31) 3470-8980</p><br />
+	                       		<i class="fas fa-envelope"></i>
+	                       		<p class="contato-info">contato@organika.com.br</p>
+	                       	</td>
+	                    </tr>
+
+	                    <tr>
+	                        <td class="submit" colspan="4">
+	                            <input type="submit" value="Enviar" id="enviar" name="enviar" class="submitbutton" />
+	                            <input type="reset" value="Limpar" id="limpar" name="limpar" class="erasebutton" />
+	                        </td>
+                   		</tr>
+
+	                </table>
+	            </form>
+
+	        <div class="endereco">
+	            <i class="fas fa-map-marker-alt"></i>
+	            <h1 class="endereco-title">Endereço</h1>
+	            <h2>Venha conhecer nosso espaço!</h2><br />
+	            <h3>R. Santa Rita Durão, 1082 - Funcionários<br />Belo Horizonte - MG, 30140-111</h3><br />
+	            <h4>Segunda à Sábado: 09h - 18h </h4>
+
+	        </div>
+
+	        <div id="mapa"></div>
+
+			    <script>
+
+			      function inicializar() {
+			        var coordenadas = {lat: -19.9340661, lng: -43.9378568};
+
+			        var mapa = new google.maps.Map(document.getElementById('mapa'), {
+			          zoom: 15,
+			          center: coordenadas,
+			          mapId: 'acc46a5819660482'
+			        });
+
+			        var marker = new google.maps.Marker({
+			          position: coordenadas,
+			          map: mapa,
+			          title: 'Meu marcador'
+			        });
+			      }
+			    </script>
+			    <script async defer
+			    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARNdtkbvhsmBqlhRPn4uYR5xTzFlWbXVc&map_ids=acc46a5819660482&callback=inicializar">
+			    </script>
+
+			</div>
+		</main>
+
+		<footer class="footer">
+			<p>contato@organika.com.br</p>
+			<p>(31) 99232-8988</p>
+			<p>Organika &#174;</p>
+		</footer>
+
+	</body>
+
+</html>
