@@ -4,13 +4,47 @@
 	box-sizing: border-box;
 }
 
+/* FONTES */
+@font-face {
+    font-family: 'Playlist Script';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Playlist Script'), url('Playlist Script.woff') format('woff');
+    }
+@font-face {
+    font-family: 'Kollektif Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Kollektif Regular'), url('Kollektif.woff') format('woff');
+}    
+@font-face {
+    font-family: 'Kollektif Italic';
+    font-style: normal;
+    font-weight: normal;
+   	src: local('Kollektif Italic'), url('Kollektif-Italic.woff') format('woff');
+}    
+@font-face {
+    font-family: 'Kollektif Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Kollektif Bold'), url('Kollektif-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Kollektif Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Kollektif Bold Italic'), url('Kollektif-BoldItalic.woff') format('woff');
+}
+
+/* ----------------------------------------------- */
+
 html, body {
 	height: 100%;
 }
 
 body {
 	font-size: 14px;
-	font-family: 'Kollektif', sans-serif;
+	font-family: "Kollektif Regular";
   	background: #FFF;
 }
 
@@ -38,7 +72,7 @@ nav a {
 	font-style: normal;
 	font-size: 30px;
 	margin: 0 50px;
-	font-family: 'Playlist', sans-serif;
+	font-family: "Playlist Script";
 	transition: .3s;
 }
 
@@ -74,7 +108,7 @@ header {
 }
 
 h1 {
-	font-family: 'Playlist', sans-serif;
+	font-family: "Playlist Script";
 	font-size: 100px;
 	font-weight: normal;
 	width: 50%;
@@ -108,7 +142,7 @@ h1 {
 }
 
 h2 {
-	font-family: 'Playlist', sans-serif;
+	font-family: "Playlist Script";
 	font-weight: normal;
 	font-size: 80px;
 	text-align: center;
@@ -136,7 +170,7 @@ h2 {
 }
 
 .numero {
-	font-family: 'Playlist', sans-serif;
+	font-family: "Playlist Script";
 }
 
 .texto {
@@ -184,7 +218,7 @@ h2 {
 }
 
 h4 {
-	font-family: 'Playlist', sans-serif;
+	font-family: "Playlist Script";
 	font-size: 80%;
 	font-weight: normal;
   	max-width: 50%;
@@ -361,7 +395,6 @@ div#comparison2 figure div {
 
 .section3 p {
 	font-size: 25px;
-	font-style: italic;
 	text-align: justify;
 	width: 80%;
 	margin: 20px auto;
