@@ -1,0 +1,416 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-size: 14px;
+	font-family: 'Kollektif', sans-serif;
+  	background: #FFF;
+}
+
+/* CABEÇALHO */
+
+menu, nav, .mobile {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+	justify-content: space-around;
+	padding: 20px;
+}
+
+menu img, .mobile img {
+	height: 120px;
+}
+
+a:link, nav a, .social a {
+	color: #000;
+}
+
+nav a {
+	text-decoration: none;
+	font-style: normal;
+	font-size: 30px;
+	margin: 0 50px;
+	font-family: 'Playlist', sans-serif;
+	transition: .3s;
+}
+
+nav a:hover {
+	color: #FFC1B3;
+	text-decoration: none;
+}
+
+.social {
+	font-size: 25px;
+	margin: 0 10px;
+}
+
+#menu-mobile {
+	display: none;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+	height: 100vh;
+	width: 100%;
+	color: #eee;
+	z-index: -1;
+	text-align: center;
+	background-image: linear-gradient(hsla(0, 100%, 90%, 0.5), hsla(0, 100%, 90%, 0.5)), url("../Imagens/rai.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top right;
+}
+
+h1 {
+	font-family: 'Playlist', sans-serif;
+	font-size: 100px;
+	font-weight: normal;
+	width: 50%;
+	color: #000;
+	text-align: center;
+	align-self: center;
+}
+
+/* ----------------------------------------------- */
+
+/* PRIMEIRA SESSÃO */
+.section1, .section2 {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	z-index: 1;
+	height: auto;
+	font-size: 5rem;
+}
+
+.section1 {
+	background: #FFF;
+	color: #793030;
+	padding: 40px 0;
+}
+
+.section2 {
+	background: #FFC1B3;
+	color: #000;
+	padding-top: 40px;
+}
+
+h2 {
+	font-family: 'Playlist', sans-serif;
+	font-weight: normal;
+	font-size: 80px;
+	text-align: center;
+	padding: 10px 10px 30px 10px;
+}
+
+.destaque {
+	color: #793030;
+}
+
+.box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.box-inside {
+	border: 3px dotted #793030;
+	width: 30%;
+	text-align: center;
+	font-style: normal;
+	margin: 20px;
+	padding: 20px 50px 50px 50px;
+}
+
+.numero {
+	font-family: 'Playlist', sans-serif;
+}
+
+.texto {
+	font-size: 40px;
+	color: #000;
+}
+
+/* ----------------------------------------------- */
+
+/* SEGUNDA SESSÃO */
+.box-inside2 {
+	width: 25%;
+	text-align: center;
+	font-style: normal;
+	position: relative;
+	margin-bottom: -15px;
+	padding: 0;
+}
+
+.titulo {
+	transition: .5s ease;
+  	opacity: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  	text-align: center;
+}
+
+.imagem {
+	opacity: 1;
+  	width: 100%;
+  	height: auto;
+  	transition: .5s ease;
+  	backface-visibility: hidden;
+}
+
+.box-inside2:hover .imagem {
+	opacity: 0.3;
+}
+
+.box-inside2:hover .titulo {
+	opacity: 1;
+}
+
+h4 {
+	font-family: 'Playlist', sans-serif;
+	font-size: 80%;
+	font-weight: normal;
+  	max-width: 50%;
+}
+
+/* ----------------------------------------------- */
+
+/* ANTES E DEPOIS SLIDER */
+
+/* UM */
+div#comparison {
+  width: 600px;
+  height: 1000px;
+  overflow: hidden;
+}
+
+div#comparison figure {
+  background-image: url("../Imagens/antes.jpg");
+  background-size: cover;
+  position: relative;
+  font-size: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+div#comparison figure>img {
+  position: relative;
+  width: 100%;
+}
+
+div#comparison figure div {
+  background-image: url("../Imagens/depois.jpg");
+  background-size: cover;
+  position: absolute;
+  width: 50%;
+  box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  bottom: 0;
+  height: 100%;
+}
+
+/* DOIS */
+div#comparison2 {
+  width: 600px;
+  height: 1000px;
+  overflow: hidden;
+}
+
+div#comparison2 figure {
+  background-image: url("../Imagens/kelly.jpg");
+  background-size: cover;
+  position: relative;
+  font-size: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+div#comparison2 figure>img {
+  position: relative;
+  width: 100%;
+}
+
+div#comparison2 figure div {
+  background-image: url("../Imagens/mayra.jpg");
+  background-size: cover;
+  position: absolute;
+  width: 50%;
+  box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  bottom: 0;
+  height: 100%;
+}
+
+/* ----------------------------------------------- */
+
+/* TERCEIRA SESSÃO */
+.box-inside3 {
+	margin: 0 20px;
+	width: 600px;
+  	height: auto;
+}
+
+.box-inside3 img {
+	width: 100%;
+}
+
+.box-inside4 {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+
+.insta {
+	color: #FFC1B3;
+	text-decoration: none;
+	padding: 10px 30px;
+	text-transform: uppercase;
+	font-size: 24px;
+	text-align: center;
+	background-color: #581823;
+	border: 1px solid #581823;
+	transition: .2s;
+	font-style: normal;
+}
+
+.insta:hover {
+	background-color: #FFF;
+	color: #581823;
+	border: 1px solid #581823;
+	text-decoration: none;
+}
+
+/* ----------------------------------------------- */
+
+/* RODAPÉ */
+.footer {
+	width: 100%;
+	background-color: #FFC1B3;
+	color: #000;
+	padding: 20px 0;
+	text-align: center;
+	font-size: 18px;
+}
+
+.footer a {
+	color: #000;
+}
+
+.footer a:hover {
+	color: #581823;
+}
+
+.creditos {
+	width: 100%;
+	background-color: #581823;
+	color: #FFF;
+	text-align: center;
+	font-size: 14px;
+	padding: 10px 0;
+}
+
+.creditos a {
+	color: #FFC1B3;
+	font-style: italic;
+}
+
+/* PÁGINA SOBRE MIM */
+
+.box-inside5 {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.box-inside6 {
+	background-image: url("../Imagens/raissa.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 50%;
+	height: 800px;
+}
+
+.section3 {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	height: auto;
+	font-size: 20px;
+	background: #fcebe8;
+	color: #000;
+}
+
+.section3 p {
+	font-size: 25px;
+	font-style: italic;
+	text-align: justify;
+	width: 80%;
+	margin: 20px auto;
+	line-height: 50px;
+}
+
+.section3 img {
+	max-width: 100%;
+}
+
+
+/* ----------------------------------------------- */
+
+/* RESPONSIDADE */
+
+@media (max-width: 600px) {
+	header { height: 50vh; }
+	div#comparison, div#comparison2 { width: 200px;  height: 300px; }
+	h1 { font-size: 30px; }
+	h2 { font-size: 70px; }
+	.box-inside, .box-inside2 { width: 100%; }
+	.box-inside3 { width: 200px; }
+	.insta { width: 100%; font-size: 12px; }
+	.texto { font-size: 30px; }
+	.section3 { flex-direction: column; }
+	.box-inside6 { width: 100%; }
+	.section3 p { font-size: 20px; line-height: 30px; }
+	.box-inside5 { width: 100%; }
+	.box-inside6 { width: 100%; background-size: cover; max-height: 400px; }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+	h1 { font-size: 70px; }
+	.box-inside, .box-inside2 { width: 50%; }
+	.section3 { flex-direction: column; }
+	.box-inside6 { width: 100%; }
+	.box-inside5 { width: 100%; }
+	.box-inside6 { width: 100%; background-size: cover; max-height: 700px; }
+}
+
+@media (max-width: 840px) {
+	menu { display: none; }
+	#menu-mobile { display: block; }
+	nav { flex-direction: column; padding: 0; }
+	nav a { margin: 0;  }
+	.mobile { flex-direction: row;  }
+}
+
+@media (max-width: 1839px) {
+	div#comparison { margin-top: 10px; }
+	div#comparison2 { margin-bottom: 10px; }
+}
