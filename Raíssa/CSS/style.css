@@ -127,7 +127,7 @@ header {
 	background-image: linear-gradient(hsla(0, 100%, 90%, 0.5), hsla(0, 100%, 90%, 0.5)), url("../Imagens/rai.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: top right;
+	background-position: center right;
 }
 
 h1 {
