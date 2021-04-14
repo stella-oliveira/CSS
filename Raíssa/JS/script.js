@@ -15,7 +15,6 @@
 	function moveDivisor2(e2) {
 	 divisor2.style.width = (e2.offsetX * 100 / comparison2Width) + "%";
 	}
-
 	
 // CARROSSEL DE IMAGENS
 var myIndex = 0;
@@ -32,19 +31,3 @@ function carousel() {
 		x[myIndex-1].style.display = "block";  
 	setTimeout(carousel, 3000); // Change image every 3 seconds
 }
-
-/*
-// EFEITO PARALLAX SCROLL
-	window.addEventListener("scroll", function() {
-		const distance = window.scrollY;
-		document.querySelector("header").style.transform = `translateY(${distance *
-		1}px)`;
-		document.querySelector(
-		".container"
-		).style.transform = `translateY(${distance * 0.3}px)`;
-		setTimeout(() => {
-   		//	document.querySelector("section h3").classList.add("animate-me");
-  		}, 400);
-	});
-
-*/
