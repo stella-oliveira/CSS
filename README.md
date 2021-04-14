@@ -7,3 +7,4 @@ Repositório de estudo sobre a linguagem CSS.
 <p><a href="https://stella-oliveira.github.io/CSS/Atividade%2014/index.html" target="_blank">Atividade 14</a></p>
 <p><a href="https://stella-oliveira.github.io/CSS/Atividade%2015/index.html" target="_blank">Atividade 15 (Projeto Tech Company)</a></p>
 <p><a href="https://stella-oliveira.github.io/CSS/Organika/index.html" target="_blank">Projeto Organika</a></p>
+<p><a href="https://stella-oliveira.github.io/CSS/Ra%C3%ADssa/index.html" target="_blank">Projeto Raíssa</a></p>
