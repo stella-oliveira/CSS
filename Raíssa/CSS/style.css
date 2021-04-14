@@ -1,6 +1,4 @@
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   box-sizing: inherit;
 }
 
@@ -10,7 +8,7 @@
 	box-sizing: border-box;
 }
 
-/* FONTES */
+/* ----------------- FONTES ----------------- */
 @font-face {
     font-family: 'Playlist Script';
     font-style: normal;
@@ -42,8 +40,7 @@
     src: local('Kollektif Bold Italic'), url('Kollektif-BoldItalic.woff') format('woff');
 }
 
-/* ----------------------------------------------- */
-
+/* ----------------- GERAL ----------------- */
 html, body {
 	height: 100%;
 }
@@ -57,8 +54,7 @@ body {
   	min-height: 100%;
 }
 
-/* CABEÇALHO */
-
+/* ----------------- CABEÇALHO ----------------- */
 menu, nav, .mobile {
 	display: flex;
 	flex-wrap: wrap;
@@ -114,6 +110,9 @@ nav a:hover {
 	display: none;
 }
 
+/* ----------------- PÁGINA INICIAL ----------------- */
+
+/* ------------ BANNER ------------ */
 header {
 	display: flex;
 	justify-content: space-around;
@@ -139,9 +138,7 @@ h1 {
 	padding-left: 100px;
 }
 
-/* ----------------------------------------------- */
-
-/* PRIMEIRA SESSÃO */
+/* ------------ PRIMEIRA SESSÃO ------------ */
 .section1, .section2 {
 	display: flex;
 	align-items: center;
@@ -201,9 +198,7 @@ h2 {
 	margin-top: -10px;
 }
 
-/* ----------------------------------------------- */
-
-/* SEGUNDA SESSÃO */
+/* ------------ SEGUNDA SESSÃO ------------ */
 .box-inside2 {
 	width: 25%;
 	text-align: center;
@@ -250,13 +245,23 @@ h2 {
 	opacity: 1;
 }
 
+/* ----------------- PÁGINA ANTES X DEPOIS ----------------- */
+.box-inside3 {
+	margin: 0 20px;
+	width: 30%;
+  	font-size: 14px;
+	text-align: center;
+}
 
+.box-inside4 {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
 
-/* ----------------------------------------------- */
+/* ------------ SLIDER  ------------ */
 
-/* ANTES E DEPOIS SLIDER */
-
-/* UM */
+/* --- UM --- */
 div#comparison {
   width: 500px;
   height: 800px;
@@ -289,7 +294,7 @@ div#comparison figure div {
   height: 100%;
 }
 
-/* DOIS */
+/* --- DOIS --- */
 div#comparison2 {
   width: 500px;
   height: 800px;
@@ -322,83 +327,7 @@ div#comparison2 figure div {
   height: 100%;
 }
 
-/* ----------------------------------------------- */
-
-/* PÁGINA ANTES E DEPOIS */
-
-.box-inside3 {
-	margin: 0 20px;
-	width: 30%;
-  	font-size: 14px;
-	text-align: center;
-}
-
-.box-inside4 {
-	margin: 0 auto;
-	width: 100%;
-	text-align: center;
-}
-
-.insta {
-	color: #FFC1B3;
-	text-decoration: none;
-	padding: 10px 30px;
-	text-transform: uppercase;
-	font-size: 24px;
-	text-align: center;
-	background-color: #581823;
-	border: 1px solid #581823;
-	transition: .2s;
-	font-style: normal;
-}
-
-.insta:hover {
-	background-color: #FFF;
-	color: #581823;
-	border: 1px solid #581823;
-	text-decoration: none;
-}
-
-/* ----------------------------------------------- */
-
-/* RODAPÉ */
-footer {
-	flex-shrink: 0;
-}
-
-.footer {
-	width: 100%;
-	background-color: #FFC1B3;
-	color: #000;
-	padding: 20px 0;
-	text-align: center;
-	font-size: 18px;
-}
-
-.footer a {
-	color: #000;
-}
-
-.footer a:hover {
-	color: #581823;
-}
-
-.creditos {
-	width: 100%;
-	background-color: #581823;
-	color: #FFF;
-	text-align: center;
-	font-size: 14px;
-	padding: 10px 0;
-}
-
-.creditos a {
-	color: #FFC1B3;
-	font-style: italic;
-}
-
-/* PÁGINA SOBRE MIM */
-
+/* ----------------- PÁGINA SOBRE ----------------- */
 .box-inside5 {
 	width: 50%;
 	margin: 0 auto;
@@ -435,8 +364,7 @@ footer {
 	max-width: 100%;
 }
 
-/* PÁGINA GALERIA */
-
+/* ----------------- PÁGINA GALERIA ----------------- */
 .box-inside7 {
 	width: 20%;
 }
@@ -445,8 +373,7 @@ footer {
 	width: 100%;
 }
 
-/* PÁGINA DEPOIMENTOS */
-
+/* ----------------- PÁGINA DEPOIMENTOS ----------------- */
 .section4 {
 	display: flex;
 	align-items: center;
@@ -507,22 +434,53 @@ footer {
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23581823' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
 }
-/* ----------------------------------------------- */
 
-/* RESPONSIDADE */
+/* ----------------- RODAPÉ ----------------- */
+footer {
+	flex-shrink: 0;
+}
 
+.footer {
+	width: 100%;
+	background-color: #FFC1B3;
+	color: #000;
+	padding: 20px 0;
+	text-align: center;
+	font-size: 18px;
+}
+
+.footer a {
+	color: #000;
+}
+
+.footer a:hover {
+	color: #581823;
+}
+
+.creditos {
+	width: 100%;
+	background-color: #581823;
+	color: #FFF;
+	text-align: center;
+	font-size: 14px;
+	padding: 10px 0;
+}
+
+.creditos a {
+	color: #FFC1B3;
+	font-style: italic;
+}
+
+/* ----------------- RESPONSIDADE ----------------- */
 @media (max-width: 600px) {
 	header { justify-content: center; text-align: center; }
 	div#comparison, div#comparison2 { width: 300px;  height: 450px; margin: 20px auto; }
 	h1 { font-size: 50px; padding: 0; width: 70%; }
 	h2 { font-size: 60px; }
-	.box-inside, .box-inside2 { width: 100%; }
-	.box-inside3 { width: 100%; }
-	.insta { width: 100%; font-size: 12px; }
+	.box-inside, .box-inside2, .box-inside3, .box-inside5, .box-inside6, .box-inside7 { width: 100%; }
 	.section3 { flex-direction: column; }
 	.section3 p { font-size: 20px; line-height: 40px; }
-	.box-inside5, .box-inside7 { width: 100%; }
-	.box-inside6 { width: 100%; background-size: cover; max-height: 400px; }
+	.box-inside6 { background-size: cover; max-height: 400px; }
 	.box-inside8 {	width: 70%; }
 	.box-inside8 p { font-size: 18px; }
 }
@@ -533,17 +491,16 @@ footer {
 	h1 { font-size: 70px; padding: 0; }
 	.box-inside { width: 30%; margin: 0 10px; }
 	.box-inside2 { width: 50%; }
-	.box-inside3 { width: 100%; }
+	.box-inside3, .box-inside5 { width: 100%; }
 	.section3 { flex-direction: column; }
 	.section3 p { font-size: 25px; }
-	.box-inside5 { width: 100%; }
 	.box-inside6 { width: 100%; background-size: cover; max-height: 700px; }
 	.box-inside7 { width: 33.3%; }
 }
 
 @media (min-width: 1201px) and (max-width: 1499px) {
 	div#comparison, div#comparison2 { width: 390px;  height: 600px; margin: 20px auto; }
-	.section3 p { font-size: 18px; line-height: 40px;  }
+	.section3 p { font-size: 18px; line-height: 40px; }
 }
 
 @media (max-width: 1070px) {
