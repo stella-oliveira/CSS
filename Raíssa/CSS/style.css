@@ -55,42 +55,29 @@ body {
 }
 
 /* ----------------- CABEÇALHO ----------------- */
-menu, nav, .mobile {
+menu img {
+	height: 120px;
+}
+
+menu {
+	padding: 20px;
+}
+
+menu, .menu {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	align-content: center;
 	justify-content: space-around;
-	padding: 20px;
 }
 
-menu img, .mobile img {
-	height: 120px;
-}
-
-a:link, nav a, .social a {
-	color: #000;
-}
-
-nav a {
-	text-decoration: none;
-	font-style: normal;
+.nav-link, .dropdown-item {
 	font-size: 24px;
+}
+
+.nav-link {
 	margin: 0 50px;
 	transition: .3s;
-}
-
-nav a:hover {
-	color: #FFC1B3;
-	text-decoration: none;
-}
-
-.btn {
-	font-size: 24px;
-}
-
-.btn:focus {
-	box-shadow: none;
 }
 
 .dropdown-item {
@@ -101,13 +88,17 @@ nav a:hover {
 	background-color: #FFC1B3;
 }
 
-.social {
-	font-size: 25px;
-	margin: 0 10px;
+.navbar-light .navbar-nav .nav-link, .social a {
+	color: #000;
 }
 
-#menu-mobile {
-	display: none;
+.navbar-light .navbar-nav .nav-link:hover, .social a:hover {
+	color: #FFC1B4;
+}
+
+.social {
+	padding: 10px;
+	font-size: 24px;
 }
 
 /* ----------------- PÁGINA INICIAL ----------------- */
@@ -269,7 +260,7 @@ div#comparison {
 }
 
 div#comparison figure {
-  background-image: url("../Imagens/antes.jpg");
+  background-image: url("../Imagens/antes-depois1.jpg");
   background-size: cover;
   position: relative;
   font-size: 0;
@@ -284,7 +275,7 @@ div#comparison figure>img {
 }
 
 div#comparison figure div {
-  background-image: url("../Imagens/depois.jpg");
+  background-image: url("../Imagens/antes-depois2.jpg");
   background-size: cover;
   position: absolute;
   width: 50%;
@@ -302,7 +293,7 @@ div#comparison2 {
 }
 
 div#comparison2 figure {
-  background-image: url("../Imagens/kelly.jpg");
+  background-image: url("../Imagens/antes-depois3.jpg");
   background-size: cover;
   position: relative;
   font-size: 0;
@@ -317,10 +308,10 @@ div#comparison2 figure>img {
 }
 
 div#comparison2 figure div {
-  background-image: url("../Imagens/mayra.jpg");
+  background-image: url("../Imagens/antes-depois4.jpg");
   background-size: cover;
   position: absolute;
-  width: 50%;
+  width: 70%;
   box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   bottom: 0;
@@ -504,9 +495,5 @@ footer {
 }
 
 @media (max-width: 1070px) {
-	menu { display: none; }
-	#menu-mobile { display: block; }
-	nav { flex-direction: column; padding: 0; }
-	nav a { margin: 0;  }
-	.mobile { flex-direction: row; justify-content: center; }
+	menu, .menu { flex-direction: column; align-items: center; }
 }
