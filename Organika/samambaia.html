@@ -4,71 +4,78 @@
 
 	<head>
 	    <title>Samambaia</title>
-	    <meta charset="UTF-8">
-	    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
-	    <link rel="preconnect" href="https://fonts.gstatic.com">
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="CSS/style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 		<link rel="shortcut icon" href="./Imagens/icon.png" type="image/png">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <script src="https://kit.fontawesome.com/ef7a547aae.js" crossorigin="anonymous"></script>
 	</head>
-	
+
 	<body>
-		<header>
-			
+
+		<header class="navbar-light">
 			<div class="header-left">  
 				<a href="./index.html"><img src="./Imagens/logo.png" class="logo" /></a> 
 			</div>
 
-			<div class="header-right">
+			<div class="header-right navbar-expand-md text-center">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			    	<span class="navbar-toggler-icon"></span>
+			  	</button>
 
-				<ul class="nav">
-					<li><a href="sobre.html" class="button">Sobre nós</a></li>
-					<li class="dropdown"><a href="" class="button">Plantas</a>
-						<div class="dropdown-content">
-							<a href="./ambienteinterno.html">Ambiente interno</a>
-							<a href="./pendentes.html">Pendentes</a>
-							<a href="./solpleno.html">Sol pleno</a>
-				 		</div>
-				 	</li>
-				 	<li class="dropdown"><a href="" class="button">Para plantar</a>
-						<div class="dropdown-content">
-							<a href="">Terra</a>
-							<a href="">Fertilizantes</a>
-							<a href="">Areia & Pedras</a>
-							<a href="">Borrifadores & Regadores</a>
-				 		</div>
-				 	</li>
-				 	<li class="dropdown"><a href="" class="button">Para decorar</a>
-						<div class="dropdown-content">
-							<a href="">Vasos</a>
-							<a href="">Suportes</a>
-				 		</div>
-				 	</li>
-				 	<li class="dropdown"><a href="" class="button">Serviços</a>
-						<div class="dropdown-content">
-							<a href="">Manutenção à domicílio</a>
-							<a href="">Consultorias personalizadas</a>
-				 		</div>
-				 	</li>
-				 	<li><a href="contato.html" class="button">Contato</a></li>
-				 	<li><a href="" class="doublebutton1">Login</a></li>
-				 	<li><a href="./cadastro.html" class="doublebutton2">Cadastro</a></li>
-			 		<br />
-			 		<input type="search" class="pesquisa" placeholder="Pesquisar"> 
-			 		<div class="icons-header">
-				 		<a href=""><img src="./Imagens/wpp.png" class="social" /></a>
-				 		<a href=""><img src="./Imagens/insta.png" class="social" /></a>
-				 		<a href=""><img src="./Imagens/face.png" class="social" /></a>
-				 		<a href=""><img src="./Imagens/twitter.png" class="social" /></a>
-				 		<a href=""><img src="./Imagens/google.png" class="social" /></a>
-				 		<a href=""><img src="./Imagens/shop.png" class="shop" /></a>
-				 	</div>
-				</ul> 
+			  	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<ul class="navegar">
+						<li><a href="sobre.html" class="button">Sobre nós</a></li>
+						<li class="drop"><a href="" class="button">Plantas</a>
+							<div class="drop-content">
+								<a href="./ambienteinterno.html">Ambiente interno</a>
+								<a href="./pendentes.html">Pendentes</a>
+								<a href="./solpleno.html">Sol pleno</a>
+					 		</div>
+					 	</li>
+					 	<li class="drop"><a href="" class="button">Para plantar</a>
+							<div class="drop-content">
+								<a href="">Terra</a>
+								<a href="">Fertilizantes</a>
+								<a href="">Areia & Pedras</a>
+								<a href="">Borrifadores & Regadores</a>
+					 		</div>
+					 	</li>
+					 	<li class="drop"><a href="" class="button">Para decorar</a>
+							<div class="drop-content">
+								<a href="">Vasos</a>
+								<a href="">Suportes</a>
+					 		</div>
+					 	</li>
+					 	<li class="drop"><a href="" class="button">Serviços</a>
+							<div class="drop-content">
+								<a href="">Manutenção à domicílio</a>
+								<a href="">Consultorias personalizadas</a>
+					 		</div>
+					 	</li>
+					 	<li><a href="contato.html" class="button">Contato</a></li>
+					 	<div class="botao-duplo">
+					 		<li><a href="" class="doublebutton1">Login</a></li>
+					 		<li><a href="./cadastro.html" class="doublebutton2">Cadastro</a></li>			 		
+					 	</div>
+				 		<br />			 
+				 		<input type="search" class="pesquisa" placeholder="Pesquisar"> 
+				 		<div class="icons-header">
+					 		<a href=""><img src="./Imagens/wpp.png" class="social" /></a>
+					 		<a href=""><img src="./Imagens/insta.png" class="social" /></a>
+					 		<a href=""><img src="./Imagens/face.png" class="social" /></a>
+					 		<a href=""><img src="./Imagens/twitter.png" class="social" /></a>
+					 		<a href=""><img src="./Imagens/google.png" class="social" /></a>
+					 		<a href=""><img src="./Imagens/shop.png" class="shop" /></a>
+					 	</div>
+					</ul>
+				</div>
 			</div>
-			
 		</header>
 
 		<main>
@@ -93,31 +100,96 @@
 					<a href="" class="buttonshop-planta">COMPRAR</a>
 				</div>
 
-			<script>
-				var myIndex = 0;
-				carousel();
-
-				function carousel() {
-					var i;
-					var x = document.getElementsByClassName("mySlides");
-					for (i = 0; i < x.length; i++) {
-						x[i].style.display = "none";  
-					}
-					myIndex++;
-					if (myIndex > x.length) {myIndex = 1}    
-						x[myIndex-1].style.display = "block";  
-					setTimeout(carousel, 3000); // Change image every 2 seconds
-				}
-			</script>
-
+			<script type="text/javascript" src="./JS/slideshow.js"></script>
+			
 		</div>
 		</main>
 
-		<footer class="footer">
-			<p>contato@organika.com.br</p>
-			<p>(31) 99232-8988</p>
-			<p>Organika &#174;</p>
+		<footer>
+			<div class="container">
+			 	<div class="row">
+			    	<div class="col-md">
+			      		<h5>Organika</h5>
+			      			<div class="d-flex flex-column">
+								<a href="sobre.html" class="p-2">Sobre nós</a>
+								<a href="#" class="p-2">Entrar</a>
+								<a href="cadastro.html" class="p-2">Cadastrar</a>
+							</div>
+			    	</div>
+			    	<div class="col-md">
+			      		<h5>Plantas</h5>
+			      			<div class="d-flex flex-column">
+								<a href="ambienteinterno.html" class="p-2">Ambiente interno</a>
+								<a href="pendentes.html" class="p-2">Pendentes</a>
+								<a href="solpleno.html" class="p-2">Sol pleno</a>
+							</div>
+			    	</div>
+			    	<div class="col-md">
+			      		<h5>Para plantar</h5>
+			      			<div class="d-flex flex-column">
+								<a href="#" class="p-2">Terra</a>
+								<a href="#" class="p-2">Fertilizantes</a>
+								<a href="#" class="p-2">Areia & Pedras</a>
+								<a href="#" class="p-2">Borrifadores & Regadores</a>
+							</div>
+			    	</div>
+			    	<div class="col-md">
+			      		<h5>Para decorar</h5>
+			      			<div class="d-flex flex-column">
+								<a href="#" class="p-2">Vasos</a>
+								<a href="#" class="p-2">Suportes</a>
+							</div>
+			    	</div>
+			    	<div class="col-md">
+			      		<h5>Serviços</h5>
+			      			<div class="d-flex flex-column">
+								<a href="#" class="p-2">Manutenções</a>
+								<a href="#" class="p-2">Consultorias</a>
+							</div>
+			    	</div>
+			    	<div class="col-md">
+			      		<h5>Contato</h5>
+			      			<div class="d-flex flex-column">
+								<a href="contato.html" class="p-2">Fale conosco</a>
+								<a href="#" class="p-2">Trabalhe conosco</a>
+								<a href="#" class="p-2">Precisa de ajuda?</a>
+							</div>
+			    	</div>
+			  	</div>
+			</div>
+
+			<div class="container mt-3">
+				<div class="row align-items-center">
+			    	<div class="col-1">
+			    		<img src="./Imagens/icon.png" class="icon" />
+			      	</div>
+				    <div class="texto-footer col-xl-2 col-8 mt-3 ml-5">
+				      	<p>Organika &#169; 2021</p>
+		      			<p><a href="#">Termos e Serviço</a> | <a href="#">Política de privacidade</a></p>
+				    </div>
+				    <div class="col-xl-3 mt-3">
+				      	<a href=""><img src="./Imagens/wpp.png" class="social" /></a>
+				 		<a href=""><img src="./Imagens/insta.png" class="social" /></a>
+				 		<a href=""><img src="./Imagens/face.png" class="social" /></a>
+				 		<a href=""><img src="./Imagens/twitter.png" class="social" /></a>
+				 		<a href=""><img src="./Imagens/google.png" class="social" /></a>
+				    </div>
+				    <div class="col-1-lg mt-3">
+				    	<div class="row align-items-center">
+				    		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.7690005612894!2d-43.93777268508534!3d-19.934136886601507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6977890cc7385%3A0xd902a6986885f39a!2sEu%20Que%20Fiz!5e0!3m2!1spt-BR!2sbr!4v1619478190857!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" class="mapa-footer"></iframe>				    
+				    		<p class="endereco-footer ml-2">
+				    			R. Santa Rita Durão, 1082 - Funcionários<br />
+				    			Belo Horizonte - MG, 30140-111<br /><br />
+			            		Segunda à Sábado: 09h - 18h
+			            	</p>
+			            </div>				    
+					</div>
+			  	</div>
+			</div>
 		</footer>
 
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="JS/script.js"></script>
 	</body>
 </html>

@@ -1,3 +1,4 @@
+/* ---------- GERAL ---------- */
 * {
 	margin: 0;
 	padding: 0;
@@ -12,14 +13,25 @@ html, body {
 	height: 100%;
 }
 
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
 body {
 	font-size: 14px;
 	font-family: 'Open Sans', sans-serif;
   	background: #F8F9FA;
-  	display: flex;
-	flex-direction: column;
 }
 
+main {
+	text-align: center;
+}
+
+/* ---------- CABEÇALHO ---------- */
 header {
 	background: #609A81;
 	height: auto;
@@ -27,107 +39,12 @@ header {
 	display: table;
 }
 
-main {
-	background: #F8F9FA;
-	text-align: center;
-}
-
-.footer {
-	background: #609A81;
-	padding: 40px;
-	font-size: 14px;
-	text-align: center;
-	flex-shrink: 0;
-}
-
-.content {
-	flex: 1 0 auto;
-}
-
-a {
-	text-decoration: none;
-}
-
-.footer p {
-	margin-bottom: 10px;
-}
-
-h1 {
-	text-align: center;
-	font-family: 'Waiting for the Sunrise', cursive;
-	font-size: 70px;
-	font-weight: bold;
-	color: #4f7f6a;
-	padding-top: 10px;
-}
-
-table {
-	margin-left: auto;
-	margin-right: auto;
-	border: none;
-}
-
-td {
-	font-size: 14px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-}
-
-input, select, option, optgroup, textarea {
-	padding: 5px;
-	font-family: 'Open Sans', sans-serif;
-}
-
-.campo {
-	text-align: right;
-	width: 170px;
-}
-
-.resposta {
-	text-align: left;
-	width: 300px;
-	padding-right: 50px;
-}
-
-.submit {
-	text-align: center;
-	padding: 20px 0;
-}
-
-.submitbutton, .erasebutton {
-	padding: 10px 35px;
-	border-radius: 5px;
-	text-transform: uppercase;
-	font-size: 16px;
-}
-
-.submitbutton {
-	border: 1px solid #4f7f6a;
-	background: #4f7f6a;
-	color: #FFF;
-}
-
-.erasebutton {
-	border: 1px solid #000;
-	background: #FFF;
-	color: #000;
-}
-
-.submitbutton:hover, .erasebutton:hover {
-	background: #FFF;
-	border: 1px solid #4f7f6a;
-	color: #4f7f6a;
-}
-
-.logo {
-	width: 220px;
-}
-
 .header-left {
 	display: table-cell;
 	text-align: center; 
 	width: 15%;
 	padding: 10px 0;
+	vertical-align: middle;
 }
 
 .header-right {
@@ -136,9 +53,18 @@ input, select, option, optgroup, textarea {
 	width: 75%;
 }
 
+.logo {
+	width: 220px;
+}
+
+/* -------- MENU -------- */
+.navbar-toggler-icon {
+	color: #000;
+}
+
 .button {
 	color: #4f7f6a;
-	width: 150px;
+	width: 180px;
 	background: #FFF;
 	padding: 10px 15px;
 	border-radius: 5px;
@@ -147,98 +73,22 @@ input, select, option, optgroup, textarea {
 	font-weight: bold;
 	text-transform: uppercase;
  	transition: .5s;
- 	margin: 0 5px;
+ 	margin: 10px 5px 0 5px;
 }
 
 .button:hover {
 	color: #FFF;
 	background: #000;
-}
-
-.nav {
-	width: 90%;
-	margin-left: 30px;
-    height: auto;
-    list-style: none;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.nav ul{
-    list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #333;
-}
-
-.nav li {
-	text-align: center;
-	margin-left: auto;
-	margin-right: 0px;
-	display: inline-block;
-	width: auto;
-}
-
-li a  {
-  display: inline-block;
-  color: #4f7f6a;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown {
-	text-align: center;
-	width: 180px;
-	margin-left: auto;
-	margin-right: auto;
-	display: inline-block;
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-	display: none;
-	position: absolute;
-  	min-width: 160px;
-	background-color: #FFF;
-	width: 180px;
-	margin-left: 5px;
-	margin-right: 5px;
-	z-index: 1;
-	text-align: center;
-	border-radius: 0 0 5px 5px;
-	border: 1px solid #FFF;
-}
-
-.dropdown-content a {
-	color: black;
-	padding: 12px 16px;
 	text-decoration: none;
-	display: block;
-	transition: .3s;
 }
 
-.dropdown-content a:hover {
-	background-color: #4f7f6a;
-	color: #FFF;
-}
-
-.dropdown:hover .dropdown-content {
-	display: block;
-	border: 1px solid #000;  
-}
-
-.dropdown:hover .button {
-  border-radius: 5px 5px 0 0;
+.botao-duplo {
+	display: inline-block;
 }
 
 .doublebutton1 {
 	color: #FFF;
-	width: 90px;
+	width: 110px;
 	background: #000;
 	padding: 10px 15px 10px 15px;
 	border-radius: 5px 0 0 5px;
@@ -247,17 +97,19 @@ li.dropdown {
 	font-weight: bold;
 	text-transform: uppercase;
  	transition: .5s;
+ 	margin-top: 10px;
 }
 
 .doublebutton1:hover, .doublebutton2:hover {
-	background: #37755a;
+	background: #15724a;
 	color: #FFF;
 	border: 1px solid #FFF;
+	text-decoration: none;
 }
 
 .doublebutton2 {
 	color: #FFF;
-	width: 90px;
+	width: 110px;
 	background: none;
 	padding: 10px 15px 10px 15px;
 	border-radius: 0 5px 5px 0;
@@ -266,6 +118,7 @@ li.dropdown {
 	font-weight: bold;
 	text-transform: uppercase;
 	margin-left: -5px;
+	margin-top: 10px;
  	transition: .5s;
 }
 
@@ -289,43 +142,155 @@ li.dropdown {
 	transition: .2s ease-in-out;
 }
 
-.social:hover {
-	height: 40px;
-}
-
 .shop {
 	height: 35px;
 	vertical-align: middle;
 	margin-left: 50px;
 }
 
-.banner {
-	background-image: url('../Imagens/banner1.jpg');
-	display: block;
-	height: 900px;
-	max-height: 80%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
+/* ---- DROPDOWN ---- */
+.navegar {
+	width: 90%;
+	margin-left: 30px;
+    height: auto;
+    list-style: none;
+    padding: 20px 0;
+    text-align: center;
 }
 
-.banner-text {
-	  background-color: rgb(0,0,0); /* Fallback color */
-	  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-	  color: white;
-	  font-family: 'Waiting for the Sunrise', cursive;
-	  font-size: 600%;
-	  font-weight: bold;
-	  position: absolute;
-	  top: 55%;
-	  left: 0;
-	  right: 0;
-	  z-index: 2;
-	  padding: 20px;
-	  margin: 0 auto;
-	  text-align: center;
-	  width: 95%;
+.navegar ul {
+    list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+.navegar li {
+	text-align: center;
+	margin-left: auto;
+	margin-right: 0px;
+	display: inline-block;
+	width: auto;
+}
+
+li a {
+	display: inline-block;
+	color: #4f7f6a;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.drop {
+	text-align: center;
+	width: 180px;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+}
+
+li.drop {
+  display: inline-block;
+}
+
+.drop-content {
+	display: none;
+	position: absolute;
+  	min-width: 180px;
+	background-color: #FFF;
+	width: 180px;
+	margin-left: 5px;
+	margin-right: 5px;
+	z-index: 1;
+	text-align: center;
+	border-radius: 0 0 5px 5px;
+	border: 1px solid #FFF;
+}
+
+.drop-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	transition: .3s;
+}
+
+.drop-content a:hover {
+	background-color: #4f7f6a;
+	color: #FFF;
+}
+
+.drop:hover .drop-content {
+	display: block;
+	border: 1px solid #000;  
+}
+
+.drop:hover .button {
+  border-radius: 5px 5px 0 0;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+	background: #609A81;
+	padding: 40px;
+	font-size: 14px;
+	text-align: center;
+	flex-shrink: 0;
+}
+
+.footer p {
+	margin-bottom: 10px;
+}
+
+footer {
+	background: #609A81;
+	padding: 20px;
+}
+
+footer h5 {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+}
+
+.p-2 {
+	color: #FFF;
+	transition: .3s;
+}
+
+.p-2:hover {
+	color: #000;
+	margin-left: 10px;
+}
+
+.icon {
+	height: 70px;
+}
+
+.texto-footer a, .endereco-footer {
+	color: #FFF;
+}
+
+.mapa-footer {
+	width: 200px;
+	height: 100px;
+}
+
+/* ---------- GERAL DE TODAS AS PÁGINAS ---------- */
+.content {
+	flex: 1 0 auto;
+	min-height: 70vh;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Waiting for the Sunrise', cursive;
+	font-size: 70px;
+	font-weight: bold;
+	color: #4f7f6a;
+	margin: 20px 0;
 }
 
 .galeria {
@@ -352,6 +317,59 @@ li.dropdown {
 	transform: scale(1);
 }
 
+/* ---------- PÁGINA INICIAL ---------- */
+.buttonmore-index {
+	padding: 10px 15px;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	transition: .5s;
+	border: 1px solid #4f7f6a;
+	margin: 10px auto;
+	display: block;
+	width: 50%;
+}
+
+.buttonmore-index:hover {
+	background: #4f7f6a;
+	color: #FFF;
+}
+
+/* ---------- BANNER ---------- */
+.hero-imagem {
+	position: relative;
+}
+
+.banner {
+	background-image: url('../Imagens/banner1.jpg');
+	display: block;
+	height: 900px;
+	max-height: 80%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.banner-text {
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0, 0.4);
+	color: white;
+	font-family: 'Waiting for the Sunrise', cursive;
+	font-size: 600%;
+	font-weight: bold;
+	position: absolute;
+	top: 40%;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	padding: 20px;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+/* ---------- PÁGINAS DOS GRUPOS DE PLANTAS ---------- */
 .title {
 	text-align: center;
 	font-family: 'Waiting for the Sunrise', cursive;
@@ -377,9 +395,26 @@ li.dropdown {
 	transition: .5s;
 }
 
+.buttonmore {
+	padding: 10px 20px;
+	border-radius: 0px 5px 5px 0;
+	background: #4f7f6a;
+	color: #FFF;
+	font-size: 18px;
+	transition: .5s;
+	border: 1px solid #4f7f6a;
+}
+
+.buttonshop:hover, .buttonmore:hover, .buttonmore-index {
+	background: #FFF;
+	border: 1px solid #4f7f6a;
+	color: #000;
+}
+
+/* ---------- PÁGINAS DE CADA PLANTA ---------- */
 .buttonshop-planta {
 	display: block;
-	width: 30%;
+	width: 50%;
 	font-size: 24px;
 	font-weight: bold;
 	letter-spacing: 10px;
@@ -400,47 +435,95 @@ li.dropdown {
 
 .buttonshop-planta:hover { 
 	border: 1px solid #000;
-	box-shadow: inset 400px 0 0 0 #000;
-}
-
-.buttonmore {
-	padding: 10px 20px;
-	border-radius: 0px 5px 5px 0;
-	background: #4f7f6a;
+	box-shadow: inset 500px 0 0 0 #000;
 	color: #FFF;
-	font-size: 18px;
-	transition: .5s;
-	border: 1px solid #4f7f6a;
 }
 
-.buttonmore-index {
-	padding: 10px 15px;
-	border-radius: 5px;
-	font-size: 18px;
-	font-weight: bold;
-	transition: .5s;
-	border: 1px solid #4f7f6a;
-	margin: 10px auto;
-	display: block;
+.conteudo-planta {
+	display: inline-block;
+	vertical-align: top;
+	text-align: justify;
 	width: 50%;
+	padding-left: 50px;
 }
 
-.buttonmore-index:hover {
-	background: #4f7f6a;
-	color: #FFF;
+.conteudo-planta h1 {
+	font-size: 700%;
 }
 
-.buttonshop:hover, .buttonmore:hover, .buttonmore-index {
-	background: #FFF;
-	border: 1px solid #4f7f6a;
-	color: #000;
+.conteudo-planta h2 {
+	font-family: 'Waiting for the Sunrise', cursive;
+	font-size: 40px;
+	display: inline-block;
+	margin-left: 20px;
+	margin: 10px 0 10px 20px;
 }
 
-.banner2 {
-	display: block;
-	max-width: 100%;
+.conteudo-planta h3 {
+	font-size: 400%;
+	vertical-align: 0px;
+	margin-right: 10px;
 }
 
+.conteudo-planta h3, .conteudo-planta h1 {
+	display: inline-block;
+	font-family: 'Waiting for the Sunrise', cursive;
+	color: #609A81;
+}
+
+.conteudo-planta p {
+	font-size: 130%;
+}
+
+.conteudo-planta p.cientifico {
+	font-style: italic;
+}
+
+.price {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -20px;
+	text-align: center;
+}
+
+.fa-tint, .fa-sun, .fa-edit {
+	display: inline-block;
+	vertical-align: 5px;
+}
+
+.fa-edit {
+	color: #609A81;
+	font-size: 150%;
+}
+
+.fa-tint {
+	color: #1E8899;
+	font-size: 150%;
+}
+
+.fa-sun {
+	color: #d3b300;
+	font-size: 180%;
+}
+
+/* ------ SLIDESHOW ------ */
+.mySlides { display:none; }
+
+.planta {
+	width: 500px;
+	display: inline-block;
+	margin-bottom: 20px auto;
+}
+
+.planta img {
+	width: 100%;
+	height: 60%;
+	border-radius: 10px;
+	box-shadow: 3px 3px 10px #888888;
+	margin-bottom: 40px;
+}
+
+/* ---------- PÁGINA SOBRE ---------- */
 .missao h2 {
 	font-family: Garamond, serif;
 	font-size: 400%;
@@ -481,6 +564,11 @@ li.dropdown {
 	padding: 0 50px;
 }
 
+.banner2 {
+	display: block;
+	max-width: 100%;
+}
+
 .foco {
 	color: #4f7f6a;
 	font-weight: bold;
@@ -491,25 +579,37 @@ li.dropdown {
 	font-weight: bold;
 }
 
+/* ---------- PÁGINA CONTATO ---------- */
+.submitbutton, .erasebutton {
+	padding: 10px 35px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.submitbutton {
+	border: 1px solid #4f7f6a;
+	background: #4f7f6a;
+	color: #FFF;
+}
+
+.erasebutton {
+	border: 1px solid #000;
+	background: #FFF;
+	color: #000;
+}
+
+.submitbutton:hover, .erasebutton:hover {
+	background: #FFF;
+	border: 1px solid #4f7f6a;
+	color: #4f7f6a;
+}
+
 .fa-phone-alt, .fa-whatsapp, .fa-envelope {
 	color: #609A81;
-	font-size: 200%;
-	margin: 0 20px 20px 0;
-}
-
-.contato-info-title {
-	width: 80%;
-	text-align: left;
-}
-
-.contato-info {
-	text-align: left;
-}
-
-.contato-info p {
-	display: inline-block;
-	vertical-align: 5px;
-	margin-bottom: 20px;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-right: 10px;
 }
 
 .fa-map-marker-alt {
@@ -519,161 +619,71 @@ li.dropdown {
 	margin-right: 20px;
 }
 
-.endereco {
-	width: 25%;
-	display: inline-block;
-	text-align: center;
-	margin-bottom: 70px;
-	vertical-align: top;
-	padding-right: 50px;
-}
-
 .endereco-title {
 	display: inline-block;
 }
 
-#mapa {
-    width: 30%;
-    height: 240px;
-   	display: inline-block;
-   	border-radius: 10px;
-   	margin: 25px 0;
-}
-
-.conteudo-planta {
-	display: inline-block;
-	vertical-align: top;
-	text-align: justify;
-	width: 50%;
-	padding-left: 50px;
-}
-
-.conteudo-planta h2 {
-	font-family: 'Waiting for the Sunrise', cursive;
-	font-size: 40px;
-	display: inline-block;
-	margin-left: 20px;
-	margin: 10px 0 10px 20px;
-}
-
-.conteudo-planta p {
-	font-size: 130%;
-}
-
-.conteudo-planta p.cientifico {
-	font-style: italic;
-}
-
-.price {
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: -20px;
-	text-align: center;
-}
-
-.conteudo-planta h3, .conteudo-planta h1 {
-	display: inline-block;
-	font-family: 'Waiting for the Sunrise', cursive;
-	color: #609A81;
-}
-
-.conteudo-planta h3 {
-	font-size: 400%;
-	vertical-align: 0px;
-	margin-right: 10px;
-}
-
-.conteudo-planta h1 {
-	font-size: 700%;
-}
-
-.fa-tint, .fa-sun, .fa-edit {
-	display: inline-block;
-	vertical-align: 5px;
-}
-
-.fa-edit {
-	color: #609A81;
-	font-size: 150%;
-}
-
-.fa-tint {
-	color: #1E8899;
-	font-size: 150%;
-}
-
-.fa-sun {
-	color: #d3b300;
-	font-size: 180%;
-}
-
-.mySlides {display:none;}
-
-.planta {
-	width: 500px;
-	display: inline-block;
-	margin-bottom: 20px auto;
-}
-
-.planta img {
+.mapa-contato {
 	width: 100%;
-	height: 60%;
-	border-radius: 10px;
-	box-shadow: 3px 3px 10px #888888;
-	margin-bottom: 40px;
+	height: 300px;
 }
 
+/* ---------- PÁGINA CADASTRO ---------- */
+label {
+	font-weight: bold;
+}
+
+#nCasa, #nPredio, #nAp {
+    display: none;
+    margin-top: -10px;
+}
+
+#feminino, #masculino, #outro, #casa, #apartamento, #ornamentais, #horta, #panc, #frutiferas, #sol, #interno {
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+.formulario {
+	margin: 0 auto;
+}
+
+.bolinha {
+    margin-top: 7px;
+}
+
+#termos {
+    color: #000;
+    text-decoration: underline;
+}
+
+#formularioCadastro {
+	text-align: left;
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
 @media only screen and (max-width: 480px) {
-	.header-left { width: 100%; display: block; }
-	.header-right { width: 100%; display: block; }
-	.button, .doublebutton1, .doublebutton2 { margin-top: 10px; }
+	.banner-text { font-size: 300%; }
 	.icons-header { display: block; margin-top: 20px; }
-	.banner-text { font-size: 400%; width: 90%; top: 100%; }
-	.missao { display: block; width: 70%; margin: 0 auto;}
-	.visao, .valores { display: block; width: 70%;  }
-	table { width: 90%; }
-	.campo, .resposta, .contato-info { display: block; width: 80%; text-align: justify; }
-	.contato-info-title { display: none; }
-	.contato-info { display: block; width: 100%; text-align: center; margin-top: 10px;  }
-	.fa-map-marker-alt { display: block; margin: 0 auto; padding: 0;}
-	.endereco { width: 80%; display: block; margin: 10px auto; padding: 0; }
-	#mapa { display: block; width: 90%; margin: 20px auto; }
-	.conteudo-planta { width: 80%; padding: 0; }
-	.planta { width: 400px; }
-	.buttonshop-planta { width: 70%; }
+	.missao { display: block; width: 70%; margin: 0 auto; }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+	.banner-text { font-size: 500%; }
+	.icons-header { margin-top: 20px; }
+}
+
+@media only screen and (max-width: 768px) {
 	.header-left { width: 100%; display: block; }
-	.header-right { width: 100%; display: block; }
-	.button, .doublebutton1, .doublebutton2 { margin-top: 10px; }
-	.banner-text { font-size: 400%; width: 90%; top: 90%; }
-	.visao, .valores { display: block; width: 70%; }
-	.campo, .resposta, .contato-info { display: block; width: 100%; text-align: justify; }
-	.contato-info-title { display: none; }
-	.contato-info { display: block; width: 100%; text-align: center; margin-top: 10px;  }
-	.fa-map-marker-alt { display: block; margin: 0 auto; padding: 0;}
-	.endereco { width: 80%; display: block; margin: 10px auto; padding: 0; }
-	#mapa { display: block; width: 90%; margin: 20px auto; }
-	.conteudo-planta { width: 80%; padding: 0; }
+	.header-right { width: 100%; display: block; margin-bottom: 20px; }
 	.planta { width: 400px; }
-	.buttonshop-planta { width: 60%; }
+	.buttonshop-planta { width: 70%; }
+	.buttonshop-planta:hover { box-shadow: inset 270px 0 0 0 #000; }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-	.banner-text { font-size: 500%; width: 90%; top: 70%; }
+@media only screen and (max-width: 1024px) {
 	.visao, .valores { display: block; width: 70%; }
-	.campo, .resposta { display: block; width: 70%; text-align: justify; }
-	.conteudo-planta { width: 80%; padding: 0; }
-	.buttonshop-planta { width: 50%; }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
-	.button, .doublebutton1, .doublebutton2 { margin-top: 10px; }
+@media only screen and (max-width: 1200px) {
 	.conteudo-planta { width: 80%; padding: 0; }
-	.buttonshop-planta { width: 40%; }
-}
-
-@media only screen and (min-width: 1201px) {
-	.button, .doublebutton1, .doublebutton2 { margin-top: 10px; }
 }
