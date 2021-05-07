@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+		<title>Contato</title>
+		<meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./Imagens/icon.png" type="image/png">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	    <link rel="stylesheet" type="text/css" href="CSS/form.css" /> 
+        <link rel="stylesheet" type="text/css" href="CSS/style.css" /> 
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+        <script src="./JS/jQuery Validation/lib/jquery.js"></script>
+   		<script src="https://jqueryvalidation.org/files/lib/jquery-1.11.1.js"></script>
+        <script src="./JS/jQuery Validation/dist/jquery.validate.js"></script>
+
+        <script type="text/javascript" src="./JS/validarFormContato.js"></script>
+
+        <script src="https://kit.fontawesome.com/ef7a547aae.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>	
+		<main>
+        <!-- CABEÇALHO -->
+	    	<menu>
+				<a href="index.html"><img src="./Imagens/logo.png" /></a>
+
+				<div class="menu">
+				    <nav class="navbar navbar-expand-lg navbar-light navbar-text text-center">
+					  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					    	<span class="navbar-toggler-icon"></span>
+					  	</button>
+					  	<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					    	<ul class="navbar-nav">
+						      	<li class="nav-item">
+							        <a href="index.html" class="nav-link menu">Início</a>
+						     	</li>
+					      		<li class="nav-item dropdown">
+					        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          		Trabalhos
+					        		</a>
+						        	<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						          		<a class="dropdown-item" href="galeria.html">Galeria</a>
+								  		<a class="dropdown-item" href="antesedepois.html">Antes X Depois</a>
+						        	</div>
+					      		</li>
+					     	 	<li class="nav-item">
+					        		<a class="nav-link" href="depoimentos.html">Depoimentos</a>
+					      		</li>
+					      		<li class="nav-item">
+					        		<a class="nav-link" href="sobre.html">Sobre mim</a>
+					      		</li>
+								<li class="nav-item">
+					        		<a class="nav-link" href="contato.html">Contato</a>
+					      		</li>
+					    	</ul>
+					  	</div>
+					</nav>
+
+					<div class="social">
+						<a href="https://www.instagram.com/raissacfotografia/" class="social" target="_blank"><i class="fab fa-instagram"></i></a>
+						<a href="https://wa.me/5531987537114?text=Olá!%20Tenho%20interesse%20em%20fazer%20um%20ensaio!" class="social" target="_blank"><i class="fab fa-whatsapp"></i></a>
+						<a href="mailto:raissaacesar@gmail.com" class="social" target="_blank"><i class="far fa-envelope"></i></a>
+					</div>
+				</div>
+			</menu>
+
+            <section class="section3">
+                <div class="box-inside4">
+                    <h2>Mande sua dúvida que responderei o mais rápido possível!</h2>
+
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6">
+
+                                <form id="formularioContato" method="post" class="gform" action="https://script.google.com/macros/s/AKfycbzIYv7_v_2_PWZ5ZcLSNSaHNw3AOrUbQExJZ29Sobpi097nLGfVPSEqTNjLyulZiL74/exec" novalidate="novalidate">
+
+                                    <!------------ NOME ------------>
+                                    <div class="form-group">
+                                        <label class="col-sm-4 col-form-label control-label" for="name">Nome</label>
+                                        <div class="form-icon">
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="Digite seu nome">
+                                        </div>
+                                    </div>
+
+                                    <!------------ E-MAIL ------------>
+                                    <div class="form-group">
+                                        <label class="col-sm-4 col-form-label control-label" for="email">E-mail</label>
+                                        <div class="form-icon">
+                                            <input type="text" class="form-control" id="email" name="email" placeholder="Digite seu e-mail">
+                                        </div>
+                                    </div>
+
+                                    <!------------ MENSAGEM ------------>
+                                    <div class="form-group">
+                                        <label class="col-sm-4 col-form-label control-label" for="message">Mensagem</label>
+                                        <div class="form-icon">
+                                            <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <!------------ BOTÃO ------------>
+                                    <div class="form-group row text-center">
+                                        <div class="col-sm-12">
+                                            <button type="submit" class="btn btn-lg enviar" value="enviar">Enviar</button>
+                                        </div>
+                                    </div>
+
+									<!------------ AGRADECIMENTO PÓS-ENVIO ------------>
+									<div style="display:none" class="mt-5 thankyou_message">
+										<h4>Obrigada por entrar em contato!</h4>
+									</div>
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+		</main>
+
+        <!-- RODAPÉ -->
+		<footer>
+			<div class="footer">
+				<p>Raíssa César Fotografia &#174; Belo Horizonte, 2021</p>
+				<a href="https://www.instagram.com/raissacfotografia/" class="social" target="_blank"><i class="fab fa-instagram"></i></a>
+			    <a href="https://wa.me/5531987537114?text=Olá!%20Tenho%20interesse%20em%20fazer%20um%20ensaio!" class="social" target="_blank"><i class="fab fa-whatsapp"></i></a>
+			    <a href="mailto:raissaacesar@gmail.com" class="social" target="_blank"><i class="far fa-envelope"></i></a>
+			</div>
+
+			<div class="creditos">
+				Desenvolvido por <a href="https://github.com/stella-oliveira/" target="_blank">Stella Oliveira</a>
+			</div>
+		</footer>
+
+		<!-- Submit the Form to Google Using "AJAX" -->
+		<script data-cfasync="false" type="text/javascript" src="./JS/form-submission-handler.js"></script>
+    </body>
+</html>

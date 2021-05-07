@@ -13,31 +13,31 @@
     font-family: 'Playlist Script';
     font-style: normal;
     font-weight: normal;
-    src: local('Playlist Script'), url('Playlist Script.woff') format('woff');
+    src: local('Playlist Script'), url('./Fonts/Playlist Script.woff') format('woff');
     }
 @font-face {
     font-family: 'Kollektif Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Kollektif Regular'), url('Kollektif.woff') format('woff');
+    src: local('Kollektif Regular'), url('./Fonts/Kollektif.woff') format('woff');
 }    
 @font-face {
     font-family: 'Kollektif Italic';
     font-style: normal;
     font-weight: normal;
-   	src: local('Kollektif Italic'), url('Kollektif-Italic.woff') format('woff');
+   	src: local('Kollektif Italic'), url('./Fonts/Kollektif-Italic.woff') format('woff');
 }    
 @font-face {
     font-family: 'Kollektif Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Kollektif Bold'), url('Kollektif-Bold.woff') format('woff');
+    src: local('Kollektif Bold'), url('./Fonts/Kollektif-Bold.woff') format('woff');
 }
 @font-face {
     font-family: 'Kollektif Bold Italic';
     font-style: normal;
     font-weight: normal;
-    src: local('Kollektif Bold Italic'), url('Kollektif-BoldItalic.woff') format('woff');
+    src: local('Kollektif Bold Italic'), url('./Fonts/Kollektif-BoldItalic.woff') format('woff');
 }
 
 /* ----------------- GERAL ----------------- */
@@ -49,7 +49,6 @@ body {
 	font-size: 14px;
 	font-family: "Kollektif Regular";
   	background: #FFF;
-
   	position: relative;
   	min-height: 100%;
 }
@@ -120,13 +119,57 @@ header {
 	background-position: center right;
 }
 
+.banner {
+	width: 100%;
+	color: #000;
+}
+
 h1 {
 	font-family: "Playlist Script";
 	font-size: 70px;
 	font-weight: normal;
-	width: 100%;
-	color: #000;
 	padding-left: 100px;
+}
+
+/* ------------ BOTÃO CTA ------------ */
+
+.cta {
+	margin-top: 30px;
+	font-family: "Kollektif Regular";
+	padding-left: 100px;
+}
+
+.cta-botao { 
+	background-color: #FFC1B3;
+}
+
+.cta-botao:focus {
+	box-shadow: none;
+}
+
+.modal-body { 
+	text-align: center;
+}
+
+.modal-body label {
+	font-size: 1rem;
+}
+
+.download {
+	color: #000;
+	background-color: #FFC1B3;
+	border-color: #FFC1B3;
+}
+
+.download:disabled, .download:disabled:hover {
+	color: #000;
+	background-color: #c2b1ad;
+	border-color: #c2b1ad;
+}
+
+.download:hover {
+	background-color: #f0937e;
+	border-color: #f0937e;
 }
 
 /* ------------ PRIMEIRA SESSÃO ------------ */
@@ -338,7 +381,9 @@ div#comparison2 figure div {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	justify-content: center;
 	height: auto;
+	min-height: 70vh;
 	font-size: 20px;
 	background: #fcebe8;
 	color: #000;
@@ -426,6 +471,32 @@ div#comparison2 figure div {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23581823' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
 }
 
+/* ----------------- PÁGINA CONTATO ----------------- */
+.box-inside4 {
+	padding: 20px 0;
+	width: 100%;
+	text-align: center;
+}
+
+.box-inside4 h2 {
+	margin: 10px 30px 30px 30px;
+	font-family: 'Playlist Script';
+	font-size: 4rem;
+}
+
+.enviar {
+	text-transform: uppercase;
+	border: 1px solid #FFC1B3;
+	background-color: #FFC1B3;
+	width: 40%;
+}
+
+.enviar:hover {
+	color: #FFF;
+	border: 1px solid #581823;
+	background-color: #581823;
+}
+
 /* ----------------- RODAPÉ ----------------- */
 footer {
 	flex-shrink: 0;
@@ -466,11 +537,13 @@ footer {
 @media (max-width: 600px) {
 	header { justify-content: center; text-align: center; }
 	div#comparison, div#comparison2 { width: 300px;  height: 450px; margin: 20px auto; }
-	h1 { font-size: 50px; padding: 0; width: 70%; }
+	h1 { font-size: 50px; padding: 0; }
+	.cta { padding: 0; }
 	h2 { font-size: 60px; }
 	.box-inside, .box-inside2, .box-inside3, .box-inside5, .box-inside6, .box-inside7 { width: 100%; }
 	.section3 { flex-direction: column; }
 	.section3 p { font-size: 20px; line-height: 40px; }
+	.box-inside4 h2 { font-size: 2.5rem; }
 	.box-inside6 { background-size: cover; max-height: 400px; }
 	.box-inside8 {	width: 70%; }
 	.box-inside8 p { font-size: 18px; }
@@ -480,6 +553,7 @@ footer {
 	header { justify-content: center; text-align: center; }
 	div#comparison, div#comparison2 { width: 590px;  height: 890px; margin: 20px auto; }
 	h1 { font-size: 70px; padding: 0; }
+	.cta { padding: 0; }
 	.box-inside { width: 30%; margin: 0 10px; }
 	.box-inside2 { width: 50%; }
 	.box-inside3, .box-inside5 { width: 100%; }
