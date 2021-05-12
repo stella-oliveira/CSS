@@ -14,7 +14,7 @@
     font-style: normal;
     font-weight: normal;
     src: local('Playlist Script'), url('./Fonts/Playlist Script.woff') format('woff');
-    }
+}
 @font-face {
     font-family: 'Kollektif Regular';
     font-style: normal;
@@ -159,17 +159,44 @@ h1 {
 	color: #000;
 	background-color: #FFC1B3;
 	border-color: #FFC1B3;
-}
-
-.download:disabled, .download:disabled:hover {
-	color: #000;
-	background-color: #c2b1ad;
-	border-color: #c2b1ad;
+	display: none;
 }
 
 .download:hover {
-	background-color: #f0937e;
+	background-color: #FFF;
 	border-color: #f0937e;
+}
+
+.download:focus {
+	outline: 0;
+	box-shadow: none;
+}
+
+.sublinhado:hover {
+	text-decoration: none;
+}
+
+.bot, .bot:active {
+	border: none;
+	outline: none;
+	color: transparent;
+ 	text-shadow: 0 0 0 0;
+}
+
+.enviar-index {
+	background-color: #793030;
+	color: #FFF;
+}
+
+.enviar-index:hover {
+	background-color: #FFF;
+	color: #000;
+	border: 1px solid #793030;
+}
+
+.enviar-index:disabled:hover {
+	background-color: #793030;
+	color: #FFF;
 }
 
 /* ------------ PRIMEIRA SESSÃO ------------ */

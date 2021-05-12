@@ -7,7 +7,7 @@
 		<meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="./Imagens/icon.png" type="image/png">
+        <link rel="shortcut icon" href="./Imagens/icon.jpg" type="image/jpg">
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	    <link rel="stylesheet" type="text/css" href="CSS/form.css" /> 
@@ -21,7 +21,6 @@
         <script src="./JS/jQuery Validation/dist/jquery.validate.js"></script>
 
         <script type="text/javascript" src="./JS/validarFormCTA.js"></script>
-		<script type="text/javascript" src="./JS/script.js"></script>
 
         <script src="https://kit.fontawesome.com/ef7a547aae.js" crossorigin="anonymous"></script>
 	</head>
@@ -93,34 +92,38 @@
 								<span aria-hidden="true">&times;</span>
 							</button>
 							</div>
-							<div class="modal-body">								
-								<form id="formularioContato" method="post" action="" novalidate="novalidate">
-                                    <!------------ NOME ------------>
-                                    <div class="form-group">
-                                        <label class="col-form-label control-label" for="name">Nome</label>
-                                        <div class="form-icon">
-                                            <input type="text" class="form-control" id="name" name="name" placeholder="Digite seu nome">
-                                        </div>
-                                    </div>
+							<form id="formularioCTA" class="gform" method="post" action="https://script.google.com/macros/s/AKfycbx1BbNaRcz-bwVwkG5SundnAk7lxKsrV_IhmEebPDNrIVB58prg5tuOOTXbVa4KamjLiQ/exec" novalidate="novalidate">
+								<div class="modal-body">								
+										<!------------ NOME ------------>
+										<div class="form-group">
+											<label class="col-form-label control-label" for="name">Nome</label>
+											<div class="form-icon">
+												<input type="text" class="form-control" id="name" name="name" placeholder="Digite seu nome">
+											</div>
+										</div>
 
-                                    <!------------ E-MAIL ------------>
-                                    <div class="form-group">
-                                        <label class="col-form-label control-label" for="email">E-mail</label>
-                                        <div class="form-icon">
-                                            <input type="text" class="form-control" id="email" name="email" placeholder="Digite seu e-mail">
-                                        </div>
-                                    </div>
-                                </form>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-								<button type="button" class="btn btn-primary download" disabled>Download</button>
-							</div>
+										<!------------ E-MAIL ------------>
+										<div class="form-group">
+											<label class="col-form-label control-label" for="email">E-mail</label>
+											<div class="form-icon">
+												<input type="text" class="form-control" id="email" name="email" placeholder="Digite seu e-mail">
+											</div>
+										</div>
+
+										<fieldset class="honeypot-field">
+											<input id="honeypot" type="text" name="honeypot" class="bot" value="" />
+										</fieldset>
+								</div>
+								<div class="modal-footer">
+									<button type="submit" class="btn btn-desativado enviar-index" value="enviar">Enviar</button>
+									<a class="sublinhado" href="./Arquivos/proposta.pdf" download="proposta"><button type="button" class="btn download">Download</button></a>			
+								</div>
+							</form>	
 						</div>
 						</div>
 					</div>
 				</div>
-
+				
 			</div>	   
      	</header>
 
@@ -192,5 +195,8 @@
 				Desenvolvido por <a href="https://github.com/stella-oliveira/" target="_blank">Stella Oliveira</a>
 			</div>
 		</footer>
+
+		<!-- Submit the Form to Google Using "AJAX" -->
+		<script data-cfasync="false" type="text/javascript" src="./JS/form-submission-handler-index.js"></script>
 	</body>
 </html>

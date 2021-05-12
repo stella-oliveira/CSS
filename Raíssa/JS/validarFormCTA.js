@@ -6,7 +6,7 @@ $.validator.setDefaults( {
 
 $( document ).ready( function () {
 
-	$( "#formularioContato" ).validate( {
+	$( "#formularioCTA" ).validate( {
 		rules: {
 			name: {
             	required: true,
@@ -22,7 +22,10 @@ $( document ).ready( function () {
             	required: "O campo é obrigatório.",
             	minlength: "O campo deve conter no mínimo 2 caracteres."
           	},
-			email: "E-mail inválido.",
+			email: {
+            	required: "O campo é obrigatório.",
+            	email: "E-mail inválido."
+          	},
 		},
 		errorElement: "em",
 		errorPlacement: function ( error, element ) {
