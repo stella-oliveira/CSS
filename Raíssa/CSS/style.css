@@ -410,7 +410,7 @@ div#comparison2 figure div {
 	align-items: center;
 	justify-content: center;
 	height: auto;
-	min-height: 70vh;
+	min-height: 75vh;
 	font-size: 20px;
 	background: #fcebe8;
 	color: #000;
@@ -445,7 +445,7 @@ div#comparison2 figure div {
 	background: #fcebe8;
 	color: #000;
 	flex-direction: column;
-	min-height: 70vh;
+	min-height: 75vh;
 }
 
 .box2 {
